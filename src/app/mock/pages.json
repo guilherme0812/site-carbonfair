@@ -1,0 +1,1505 @@
+[
+    {
+        "lang": "es",
+        "id": "home",
+        "folder_1": "home",
+        "text": {
+            "btn-0fcac2b7": {
+                "texto": "Buscar"
+            },
+            "btn-27ed1de1": {
+                "texto": "Saber más"
+            },
+            "btn-6f438e6b": {
+                "texto": "¡Conoce!"
+            },
+            "btn-75b53be6": {
+                "texto": "¡Conoce!"
+            },
+            "btn-8477be7a": {
+                "texto": "Buscar"
+            },
+            "btn-bb0eff0e": {
+                "texto": "Calcular emisiones"
+            },
+            "btn-e597c80a": {
+                "texto": "Compensar"
+            },
+            "fld-cb6400dc": {
+                "texto": "Buscar"
+            },
+            "fld-eed83481": {
+                "texto": "Buscar"
+            },
+            "lbl-0731a9c4": {
+                "texto": "Sello de Neutralización de Carbono"
+            },
+            "lbl-09accd0b": {
+                "texto": "Nuestros clientes"
+            },
+            "lbl-0df58d2e": {
+                "texto": "Solución Vertical de Carbono"
+            },
+            "lbl-1b3efd70": {
+                "texto": "4 - ¿Cómo se generan los créditos de CO<sub>2</sub>?"
+            },
+            "lbl-1e702ab7": {
+                "texto": "2 - ¿Qué son proyectos socioambientales?"
+            },
+            "lbl-1f6d0928": {
+                "texto": "Gestión de Emisiones de CO<sub>2</sub> y Créditos"
+            },
+            "lbl-31a4ce49": {
+                "texto": "3 - ¿Cómo se realiza la compensación de los créditos que voy a comprar?"
+            },
+            "lbl-4950105a": {
+                "texto": "7 - ¿Qué es CO<sub>2</sub>?"
+            },
+            "lbl-57f598f7": {
+                "texto": "Registrar Proyecto Ambiental"
+            },
+            "lbl-667ab668": {
+                "texto": "9 - ¿Qué metodologías se utilizan?"
+            },
+            "lbl-6bbf0052": {
+                "texto": "Preguntas frecuentes"
+            },
+            "lbl-76faca28": {
+                "texto": "¡Los proyectos que cambiarán tu empresa!"
+            },
+            "lbl-7c65e342": {
+                "texto": "8 - ¿Qué es el Factor de Emisión de CO<sub>2</sub>?"
+            },
+            "lbl-9b8cdf9f": {
+                "texto": "6 - ¿Cómo nace un proyecto socioambiental?"
+            },
+            "lbl-c180587a": {
+                "texto": "Apoyar a tu Cadena de Suministro"
+            },
+            "lbl-c5153a5e": {
+                "texto": "Calculadoras y Herramientas de Integración"
+            },
+            "lbl-d7c5ace7": {
+                "texto": "1 - ¿Qué es un crédito de carbono?"
+            },
+            "lbl-dcf05f3f": {
+                "texto": "Neutralizar Emisiones de CO<sub>2</sub>"
+            },
+            "lbl-ec3e436a": {
+                "texto": "Validez y Confianza, conoce a nuestros socios"
+            },
+            "lbl-f2b7ba94": {
+                "texto": "DEL COMPROMISO A LA ACCIÓN"
+            },
+            "lbl-f63eea38": {
+                "texto": "5 - ¿Cómo se calcula el valor del crédito?"
+            },
+            "lbl-ff1dd8ae": {
+                "texto": "Proyectos Sociales y Ambientales apoyados"
+            },
+            "txt-05c59b66": {
+                "texto": "Los créditos de carbono son emitidos por organizaciones gubernamentales nacionales o internacionales. Ya hemos mencionado los acuerdos de Kyoto y París que crearon los primeros mercados internacionales de carbono."
+            },
+            "txt-120402d2": {
+                "texto": "Ocultar mapa de proyectos!"
+            },
+            "txt-14ba0907": {
+                "texto": "APIs y calculadoras online para optimizar compensaciones e involucrar a los interesados"
+            },
+            "txt-1d302169": {
+                "texto": "Modelo full service en la gestión de créditos de carbono. Desde la generación de créditos de carbono hasta la reducción de costos en la compra de créditos de carbono, gestión de emisiones y uso de herramientas integradas de cálculo de las emisiones de CO<sub>2</sub>"
+            },
+            "txt-23b40387": {
+                "texto": "Negociar, comprar y registrar créditos de carbono. Mayor diversidad y trazabilidad de proyectos certificados"
+            },
+            "txt-3591af63": {
+                "texto": "El Pago por Servicios Ambientales (PSA) fue la forma encontrada para “precificar” prácticas ambientales e incentivar la conservación a través de remuneraciones para quien protege el medio ambiente. Este escenario corresponde al principio del pagador-polutente y protector-receptor, es decir, aquel que está impactando negativamente el medio ambiente debe “pagar” a aquel que, voluntariamente, conserva o adopta medidas y prácticas más sostenibles. El mercado de crédito de carbono se convirtió en el principal proyecto de PSA utilizado por los países.\n\nEl Protocolo de Kyoto de 1997 y el Acuerdo de París de 2015 fueron acuerdos internacionales que establecieron metas internacionales de emisiones de CO<sub>2</sub>. Con este último ratificado por todos, excepto seis países, dieron origen a metas nacionales de emisiones y a los reglamentos para apoyarlas.\n\nCon estos nuevos reglamentos en vigor, la presión sobre las empresas para encontrar formas de reducir su huella de carbono está aumentando."
+            },
+            "txt-393bb704": {
+                "texto": "Haz tu parte en la compensación de las emisiones de carbono de tu empresa y contribuye a reducir el cambio climático."
+            },
+            "txt-3e8f27a2": {
+                "texto": "Herramienta de cálculo y gestión de emisiones. Stock y registro de neutralizaciones de carbono"
+            },
+            "txt-41004ad4": {
+                "texto": "<p className='text-sm'>Los proyectos ambientales que reducen o evitan sus emisiones son los generadores de créditos de carbono, es decir, aquellos que reciben la certificación. Por otro lado, aquellos considerados contaminantes pueden comprar estos créditos, en la misma proporción, para compensar su impacto ambiental. Durante esta comercialización, el crédito de carbono funciona como 'dinero o acción' para incentivar los proyectos ambientales, que a menudo dependen de este apoyo financiero para mantener sus actividades y acciones de desarrollo sostenible a lo largo de los años.</p><p className='text-sm mb-2'>Existen diversos proyectos que pueden generar créditos de carbono a través de prácticas sostenibles. Algunos ejemplos de estos proyectos son:</p><ul className='mb-2 list-disc text-sm pl-4'><li>Sustitución de combustibles no renovables por biomasa renovable en fábricas</li><li>Implementación de tecnologías limpias, como parques eólicos y paneles solares</li><li>Preservación forestal de grandes áreas</li></ul><p className='text-sm'>La cantidad de carbono evitado a partir de estas actividades se contabiliza y acumula en forma de crédito para el proyecto en cuestión. Todos estos proyectos pasan por un monitoreo y verificaciones para comprobar la veracidad de las acciones, para luego emitir las RCEs.</p>"
+            },
+            "txt-4ba3e217": {
+                "texto": "Descubre cómo puedes cumplir con tus compromisos ESG y ayudar a habilitar proyectos socioambientales certificados. Carbon Fair es la primera plataforma brasileña de negociación y gestión de créditos de carbono voluntarios en Brasil."
+            },
+            "txt-60c0f210": {
+                "texto": "Buscar"
+            },
+            "txt-62a72bcb": {
+                "texto": "Conoce y apoya proyectos sociales certificados"
+            },
+            "txt-7019e6b2": {
+                "texto": "Un crédito de carbono, también conocido como Reducciones Certificadas de Emisiones (RCEs), se considera un certificado que demuestra la reducción de las emisiones de gases de efecto invernadero de un proyecto. Por convención internacional, cada crédito de carbono generado corresponde a una tonelada de carbono que no se ha emitido a la atmósfera."
+            },
+            "txt-76322293": {
+                "texto": "Plataforma creada por investigadores y empresas que han pasado por la Universidad"
+            },
+            "txt-7caf277f": {
+                "texto": "Desarrollemos juntos proyectos para reducir y/o capturar carbono en tu Cadena de Suministro u otros sectores"
+            },
+            "txt-882cb980": {
+                "texto": "Toneladas de CO<sub>2</sub> compensadas"
+            },
+            "txt-8b195657": {
+                "texto": "<p className='text-sm mb-2'>Los factores de emisión de CO<sub>2</sub> se calculan según la herramienta metodológica aprobada por el Consejo Ejecutivo del MDL y tienen como objetivo estimar la contribución, en términos de reducción de emisiones de CO<sub>2</sub>, de un proyecto de MDL que genera electricidad para la red.</p><p className='text-sm mb-2'>La herramienta para calcular el factor de emisión para el sistema eléctrico (Herramienta para calcular el factor de emisión para un sistema eléctrico) se actualiza constantemente.</p><p className='text-sm mb-2'>En resumen, el factor de emisión del sistema interconectado para fines de MDL es una combinación del factor de emisión del margen de operación, que refleja la intensidad de las emisiones de CO<sub>2</sub> de la energía despachada en el margen, con el factor de emisión del margen de construcción, que refleja la intensidad de las emisiones de CO<sub>2</sub> de las últimas centrales construidas.</p><p className='text-sm mb-2'>Es un algoritmo ampliamente utilizado para cuantificar la contribución futura de una central que va a generar energía eléctrica para la red en términos de reducción de emisiones de CO<sub>2</sub> en relación con un escenario base. Este factor sirve para cuantificar la emisión que está siendo desplazada en el margen. Su utilidad está asociada a proyectos de MDL y se aplica, exclusivamente, para estimar las reducciones certificadas de emisiones (RCEs) de los proyectos de MDL.</p><a href='https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/sirene/dados-e-ferramentas/fatores-de-emissao#:~:text=Os%20fatores%20de%20emiss%C3%A3o%20de,gere%20eletricidade%20para%20a%20rede.' target='_blank' rel='noreferrer' style={{ textDecoration: 'underline' }}>Ministério da Ciência, Tecnologia e InovaçãoMinisterio de Ciencia, Tecnología e Innovación (www.gov.br)</a>"
+            },
+            "txt-8df33da2": {
+                "texto": "Apoyo en la definición de metodología y certificación de proyectos"
+            },
+            "txt-8e7bf1dc": {
+                "texto": "La plataforma Carbon Fair está formada por un grupo multi-stakeholder que ayuda a garantizar que los proyectos apoyados proporcionen los beneficios propuestos y que el estándar Carbon Fair Standard (CFS), primer estándar de certificación brasileño, certifique proyectos con soluciones basadas en la naturaleza (Nature Based Solutions), uso de investigación y tecnología (hard science), adicionalidad y con procesos mensurables, transparentes, rastreables y replicables.\n\nAdemás, la plataforma también posibilita la gestión de emisiones de carbono de la empresa y hace uso de tecnología de blockchain.\n\nDe esta manera, queremos viabilizar el máximo de proyectos ambientales y sociales, y ayudar a empresas y personas a alcanzar sus objetivos sostenibles."
+            },
+            "txt-98f7fa6f": {
+                "texto": "Buscar"
+            },
+            "txt-a0453491": {
+                "texto": "Proyectos ambientales apoyados"
+            },
+            "txt-ae1f5b13": {
+                "texto": "Proyectos que reduzcan las emisiones de CO<sub>2</sub> e impactos ambientales y sociales pueden participar"
+            },
+            "txt-b07a670a": {
+                "texto": "Apoyo en la definición de metodología y certificación de proyectos"
+            },
+            "txt-bacce3b4": {
+                "texto": "Empresas y eventos neutralizados"
+            },
+            "txt-bd9044a0": {
+                "texto": "El dióxido de carbono (CO<sub>2</sub>), también conocido como gas carbónico, es un compuesto químico gaseoso que provoca graves desequilibrios en el efecto invernadero del planeta Tierra. Posee un átomo de carbono y dos átomos de oxígeno en su composición química. En condiciones normales, este gas no tiene olor ni sabor, siendo difícil de detectar.\n\nEsencial para la vida en el planeta, el carbono se encuentra en la atmósfera en forma de dióxido de carbono (CO<sub>2</sub>). Puede ser producido a partir de la oxidación de monóxido de carbono. Por otro lado, varios organismos liberan este gas mediante el proceso de respiración, incluidas las plantas y los árboles."
+            },
+            "txt-c228b3c0": {
+                "texto": "Apoyo en la realización de asociaciones de investigación, metodología y verificación de créditos de carbono"
+            },
+            "txt-c56cec7a": {
+                "texto": "Ver mapa de proyectos!"
+            },
+            "txt-d25e3047": {
+                "texto": "Certifica la acción de neutralización de carbono y obtén el Sello y Certificado"
+            },
+            "txt-dcec4172": {
+                "texto": "La plataforma Carbon Fair cuenta con el apoyo de diversos científicos, investigadores, ambientalistas, gobierno, empresas, emprendedores y personas que buscan actuar contra el cambio climático y promover acciones socioambientales. ¡Únete como socio!"
+            },
+            "txt-e16675ba": {
+                "texto": "Consultoría que actúa desde 2008 apoyando a empresas y proyectos de créditos de carbono"
+            },
+            "txt-ee44343b": {
+                "texto": "<p className='text-sm mb-2'>Cuando se trata de la venta de créditos de carbono en el mercado de carbono, hay dos mercados distintos y significativos para elegir.</p><ul className='mb-2 list-disc text-sm pl-4'><li>Uno es un mercado regulado, establecido por regulaciones de 'cap-and-trade' a nivel regional y estatal.</li><li>El otro es un mercado voluntario donde las empresas e individuos compran créditos (por su cuenta) para compensar sus emisiones de carbono.</li></ul><p className='text-sm mb-2'>Pense así: el mercado regulatorio es obligatorio, mientras que el mercado voluntario es opcional.</p><p className='text-sm mb-2'>Cuando se trata del mercado regulado, cada empresa que opera bajo un programa de 'cap-and-trade' recibe un cierto número de créditos de carbono cada año. Algunas de estas empresas producen menos emisiones que el número de créditos asignados, lo que les da un excedente de créditos de carbono.</p><p className='text-sm mb-2'>El número de créditos emitidos cada año suele basarse en objetivos de emisiones. Los créditos suelen emitirse en lo que se conoce como un programa de 'cap-and-trade'. Los reguladores establecen un límite para las emisiones de carbono – el 'cap'. Este límite disminuye lentamente con el tiempo, lo que hace cada vez más difícil para las empresas mantenerse dentro de ese límite.</p><p className='text-sm mb-2'>Puedes pensar en los créditos de carbono como un 'permiso' para que una empresa emita hasta cierta cantidad de CO<sub>2</sub> en ese año.</p>"
+            },
+            "txt-f6ff72ef": {
+                "texto": "Centro de Innovación y Emprendimiento en la USP. Apoyo en la realización de asociaciones de investigación"
+            },
+            "txt-fd40fba8": {
+                "texto": "Todos los proyectos registrados en la plataforma Carbon Fair siguen los estándares Verra - VCS y CFS - Carbon Fair Standard, y son certificados y verificados por empresas e institutos de investigación reconocidos a nivel nacional e internacional. Ver más en Quiénes Somos.\n\nAdemás, también trabajamos con proyectos verificables o ya verificados por los siguientes estándares del mercado de carbono: American Carbon Registry (ACR), Climate, Community and Biodiversity (CCB), Gold Standard (GS), Mecanismo de Desarrollo Limpio (MDL), Social Carbon (SC) y Verified Carbon Standard (VCS).\n\n¿Qué tipos de proyectos apoyamos?\n\nEnergía: Biomasa renovable, Energía eólica, Energía solar, Pequeña Central Hidroeléctrica, Metano para energía, Eficiencia Energética, Estufas eficientes y Cambio de combustible.\n\nAgricultura, Bosques y Uso del Suelo: Agricultura Regenerativa y Agroforestal, Restauración forestal con especies nativas, REDD+ y Otros proyectos AFOLU (Agricultura, Bosques y otros usos de la tierra).\n\nResiduos: Reciclaje y/o reuso, Compostaje, Biodigestores, Purificadores de agua y Otros proyectos de gestión de residuos."
+            }
+        }
+    },
+    {
+        "lang": "en",
+        "id": "home",
+        "folder_1": "home",
+        "text": {
+            "btn-0fcac2b7": {
+                "texto": "Search"
+            },
+            "btn-27ed1de1": {
+                "texto": "Learn more"
+            },
+            "btn-6f438e6b": {
+                "texto": "Get to know"
+            },
+            "btn-75b53be6": {
+                "texto": "Get to know!"
+            },
+            "btn-8477be7a": {
+                "texto": "Search"
+            },
+            "btn-bb0eff0e": {
+                "texto": "Calculate emissions"
+            },
+            "btn-e597c80a": {
+                "texto": "Offset"
+            },
+            "fld-cb6400dc": {
+                "texto": "Search"
+            },
+            "fld-eed83481": {
+                "texto": "Search"
+            },
+            "lbl-0731a9c4": {
+                "texto": "Carbon Neutral Seal"
+            },
+            "lbl-09accd0b": {
+                "texto": "Our clients"
+            },
+            "lbl-0df58d2e": {
+                "texto": "Vertical Carbon Solution"
+            },
+            "lbl-1b3efd70": {
+                "texto": "4 - How are CO<sub>2</sub> credits generated?"
+            },
+            "lbl-1e702ab7": {
+                "texto": "2 - What are socio-environmental projects?"
+            },
+            "lbl-1f6d0928": {
+                "texto": "CO<sub>2</sub> Emissions and Credits Management"
+            },
+            "lbl-31a4ce49": {
+                "texto": "3 - How is the compensation of the credits I will buy done?"
+            },
+            "lbl-4950105a": {
+                "texto": "7 - What is CO<sub>2</sub>?"
+            },
+            "lbl-57f598f7": {
+                "texto": "Register Environmental Project"
+            },
+            "lbl-667ab668": {
+                "texto": "9 - What methodologies are used?"
+            },
+            "lbl-6bbf0052": {
+                "texto": "Frequently Asked Questionss"
+            },
+            "lbl-76faca28": {
+                "texto": "The projects that will change your company!"
+            },
+            "lbl-7c65e342": {
+                "texto": "8 - What is the CO<sub>2</sub> Emission Factor?"
+            },
+            "lbl-9b8cdf9f": {
+                "texto": "6 - How does a socio-environmental project come to life?"
+            },
+            "lbl-c180587a": {
+                "texto": "Support Your Supply Chain"
+            },
+            "lbl-c5153a5e": {
+                "texto": "Calculators and Integration Tools"
+            },
+            "lbl-d7c5ace7": {
+                "texto": "1 - What is a carbon credit?"
+            },
+            "lbl-dcf05f3f": {
+                "texto": "Neutralize CO<sub>2</sub> Emissions"
+            },
+            "lbl-ec3e436a": {
+                "texto": "Validity and Reliability, meet our partners"
+            },
+            "lbl-f2b7ba94": {
+                "texto": "FROM COMMITMENT TO ACTION"
+            },
+            "lbl-f63eea38": {
+                "texto": "5 - How is the credit value calculated?"
+            },
+            "lbl-ff1dd8ae": {
+                "texto": "Supported Social & Environmental Projects"
+            },
+            "txt-05c59b66": {
+                "texto": "Carbon credits are issued by national or international governmental organizations. We have already mentioned the Kyoto and Paris agreements that created the first international carbon markets."
+            },
+            "txt-120402d2": {
+                "texto": "Hide project map!"
+            },
+            "txt-14ba0907": {
+                "texto": "APIs and online calculators to optimize offsets and engage stakeholders."
+            },
+            "txt-1d302169": {
+                "texto": "Full-service model in carbon credit management. From carbon credit generation to cost reduction in buying carbon credits, emissions management, and use of integrated CO<sub>2</sub> emission calculation tools."
+            },
+            "txt-23b40387": {
+                "texto": "Negotiate, purchase, and register carbon credits. Greater diversity and traceability of certified projects."
+            },
+            "txt-3591af63": {
+                "texto": "Payment for environmental services (PES) was the way found to 'price' environmental practices and encourage conservation through remunerations for those who protect the environment. This scenario corresponds to the principle of the polluter-pays and protector-receiver, that is, those who are negatively impacting the environment must 'pay' for those who, voluntarily, conserve or adopt more sustainable measures and practices. The carbon credit market has become the main PES project used by countries.\n\nThe 1997 Kyoto Protocol and the 2015 Paris Agreement were international agreements that established international CO<sub>2</sub> emission targets. With the latter ratified by all but six countries, they gave rise to national emission targets and the regulations to support them.\n\nWith these new regulations in place, pressure on companies to find ways to reduce their carbon footprint is growing."
+            },
+            "txt-393bb704": {
+                "texto": "Do your part in offsetting your company's carbon emissions and contribute to reducing climate change."
+            },
+            "txt-3e8f27a2": {
+                "texto": "Emission calculation and management tool. Carbon neutralizations stock and registry."
+            },
+            "txt-41004ad4": {
+                "texto": "<p className='text-sm'>Environmental projects that reduce or avoid their emissions are the generators of carbon credits, that is, those that receive certification. On the other hand, those considered polluters can buy these credits, in the same proportion, to offset their environmental impact. During this commercialization, the carbon credit functions as 'money or action' to incentivize environmental projects, which often depend on this financial support to maintain their activities and actions for sustainable development over the years.</p><p className='text-sm mb-2'>There are several projects that can generate carbon credits through sustainable practices. Some of these examples are:</p><ul className='mb-2 list-disc text-sm pl-4'><li>Replacing non-renewable fuel with renewable biomass in factories</li><li>Implementing clean technologies, such as wind farms and solar panels</li><li>Forest preservation of large areas</li></ul><p className='text-sm'>The amount of carbon avoided from these activities is quantified and accumulated in the form of credit for the project in question. All these projects undergo monitoring and verifications to prove the veracity of the actions, and only then are the CERs issued.</p>"
+            },
+            "txt-4ba3e217": {
+                "texto": "See how you can meet your ESG commitments and help enable certified socio-environmental projects. Carbon Fair is the first Brazilian platform for trading and managing voluntary carbon credits in Brazil."
+            },
+            "txt-60c0f210": {
+                "texto": "Search"
+            },
+            "txt-62a72bcb": {
+                "texto": "Meet and support certified social projects."
+            },
+            "txt-7019e6b2": {
+                "texto": "A carbon credit, also known as Certified Emission Reductions (CERs), is considered a certificate that proves the reduction of greenhouse gas emissions from a project. By international convention, each carbon credit generated corresponds to one ton of carbon that has not been emitted into the atmosphere."
+            },
+            "txt-76322293": {
+                "texto": "Platform created by researchers and companies that have gone through the University"
+            },
+            "txt-7caf277f": {
+                "texto": "Let's develop together projects to reduce and/or capture carbon in your Supply Chain or other sectors."
+            },
+            "txt-882cb980": {
+                "texto": "Tons of CO<sub>2</sub> offset"
+            },
+            "txt-8b195657": {
+                "texto": "<p className='text-sm mb-2'>CO<sub>2</sub> emission factors are calculated according to the methodology tool approved by the CDM Executive Board and aim to estimate the contribution, in terms of CO<sub>2</sub> emission reduction, of a CDM project that generates electricity for the grid.</p><p className='text-sm mb-2'>The tool to calculate the emission factor for the electrical system is constantly updated.</p><p className='text-sm mb-2'>In summary, the emission factor of the interconnected system for CDM purposes is a combination of the emission factor of the operating margin, which reflects the intensity of the CO<sub>2</sub> emissions from the dispatched energy at the margin, with the emission factor of the construction margin, which reflects the intensity of the CO<sub>2</sub> emissions from the latest built plants.</p><p className='text-sm mb-2'>It is a widely used algorithm to quantify the future contribution of a plant that will generate electricity for the grid in terms of CO<sub>2</sub> emission reduction compared to a baseline scenario. This factor serves to quantify the emission being displaced at the margin. Its utility is associated with CDM projects and applies exclusively to estimate certified emission reductions (CERs) of CDM projects.</p><a href='https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/sirene/dados-e-ferramentas/fatores-de-emissao#:~:text=Os%20fatores%20de%20emiss%C3%A3o%20de,gere%20eletricidade%20para%20a%20rede.' target='_blank' rel='noreferrer' style={{ textDecoration: 'underline' }}>Ministry of Science, Technology, and Innovation (www.gov.br)</a>"
+            },
+            "txt-8df33da2": {
+                "texto": "Support in defining methodology and project certification"
+            },
+            "txt-8e7bf1dc": {
+                "texto": "The Carbon Fair platform is formed by a multi-stakeholder group that helps ensure that the supported projects provide the proposed benefits and that the Carbon Fair Standard (CFS), the first Brazilian certification standard, certifies projects with nature-based solutions, use of research and technology (hard science), additionality, and with measurable, transparent, traceable, and replicable processes.\n\nIn addition, the platform also enables carbon emission management for companies and uses blockchain technology.\n\nIn this way, we want to enable as many environmental and social projects as possible, and help companies and individuals achieve their sustainable objectives."
+            },
+            "txt-98f7fa6f": {
+                "texto": "Search"
+            },
+            "txt-a0453491": {
+                "texto": "Supported environmental projects"
+            },
+            "txt-ae1f5b13": {
+                "texto": "Projects that reduce CO<sub>2</sub> emissions and environmental and social impacts can participate."
+            },
+            "txt-b07a670a": {
+                "texto": "Support in defining methodology and project certification"
+            },
+            "txt-bacce3b4": {
+                "texto": "Companies and events neutralized"
+            },
+            "txt-bd9044a0": {
+                "texto": "Carbon dioxide (CO<sub>2</sub>), also known as carbonic gas, is a gaseous chemical compound that causes serious imbalances in the Earth's greenhouse effect. It has one carbon atom and two oxygen atoms in its chemical composition. Under normal conditions, this gas has no smell or taste, making it difficult to detect.\n\nEssential for life on the planet, carbon is found in the atmosphere in the form of carbon dioxide (CO<sub>2</sub>). It can be produced from the oxidation of carbon monoxide. On the other hand, several organisms release this gas through the process of respiration, including plants and trees."
+            },
+            "txt-c228b3c0": {
+                "texto": "Support in conducting research partnerships, methodology, and carbon credit verification"
+            },
+            "txt-c56cec7a": {
+                "texto": "View project map!"
+            },
+            "txt-d25e3047": {
+                "texto": "Certify carbon neutrality action and obtain the Seal and Certificate."
+            },
+            "txt-dcec4172": {
+                "texto": "The Carbon Fair platform is supported by various scientists, researchers, environmentalists, government, companies, entrepreneurs, and individuals who seek to act against climate change and promote socio-environmental actions. Come be a partner!"
+            },
+            "txt-e16675ba": {
+                "texto": "Consulting firm operating since 2008 supporting companies and carbon credit projects"
+            },
+            "txt-ee44343b": {
+                "texto": "<p className='text-sm mb-2'>When it comes to selling carbon credits in the carbon market, there are two distinct and significant markets to choose from.</p><ul className='mb-2 list-disc text-sm pl-4'><li>One is a regulated market, established by 'cap-and-trade' regulations at the regional and state levels.</li><li>The other is a voluntary market where companies and individuals buy credits (on their own) to offset their carbon emissions.</li></ul><p className='text-sm mb-2'>Think of it this way: the regulatory market is mandatory, while the voluntary market is optional.</p><p className='text-sm mb-2'>When it comes to the regulatory market, each company operating under a 'cap-and-trade' program receives a certain number of carbon credits each year. Some of these companies produce fewer emissions than the number of credits assigned to them, giving them a surplus of carbon credits.</p><p className='text-sm mb-2'>The number of credits issued each year is typically based on emission targets. Credits are often issued under what is known as a 'cap-and-trade' program. Regulators set a limit for carbon emissions – the cap. This limit decreases slowly over time, making it increasingly difficult for companies to stay within that limit.</p><p className='text-sm mb-2'>You can think of carbon credits as a 'permit' to emit up to a certain amount of CO<sub>2</sub> in that year.</p>"
+            },
+            "txt-f6ff72ef": {
+                "texto": "Innovation and Entrepreneurship Center at USP. Support in conducting research partnerships"
+            },
+            "txt-fd40fba8": {
+                "texto": "All projects registered on the Carbon Fair platform follow the Verra - VCS and CFS - Carbon Fair Standard standards, are certified and verified by nationally and internationally recognized companies and research institutes. See more in About Us.\n\nIn addition, we also work with projects that are verifiable or already verified by the following carbon market standards: American Carbon Registry (ACR), Climate, Community and Biodiversity (CCB), Gold Standard (GS), Clean Development Mechanism (CDM), Social Carbon (SC), and Verified Carbon Standard (VCS).\n\nWhat types of projects do we support?\n\nEnergy: Renewable Biomass, Wind Energy, Solar Energy, Small Hydropower, Methane for Energy, Energy Efficiency, Efficient Stoves, and Fuel Switching.\n\nAgriculture, Forest, and Land Use: Regenerative Agriculture and Agroforestry, Forest Restoration with Native Species, REDD+ and Other AFOLU (Agriculture, Forests and other land use) projects.\n\nWaste: Recycling and/or reuse, Composting, Biodigesters, Water purifiers, and Other waste management projects."
+            }
+        }
+    },
+    {
+        "lang": "pt-br",
+        "id": "home",
+        "folder_1": "home",
+        "text": {
+            "btn-0fcac2b7": {
+                "texto": "Buscar"
+            },
+            "btn-27ed1de1": {
+                "texto": "Saber mais"
+            },
+            "btn-6f438e6b": {
+                "texto": "Conheça"
+            },
+            "btn-75b53be6": {
+                "texto": "Conheça!"
+            },
+            "btn-8477be7a": {
+                "texto": "Buscar"
+            },
+            "btn-bb0eff0e": {
+                "texto": "Calcular emissão"
+            },
+            "btn-e597c80a": {
+                "texto": "Compensar"
+            },
+            "fld-cb6400dc": {
+                "texto": "Buscar"
+            },
+            "fld-eed83481": {
+                "texto": "Buscar"
+            },
+            "lbl-0731a9c4": {
+                "texto": "Selo de Neutralização de Carbono"
+            },
+            "lbl-09accd0b": {
+                "texto": "Nossos clientes"
+            },
+            "lbl-0df58d2e": {
+                "texto": "Solução Verticalizada de Carbono"
+            },
+            "lbl-1b3efd70": {
+                "texto": "4 - Como são gerados os créditos de CO<sub>2</sub>?"
+            },
+            "lbl-1e702ab7": {
+                "texto": "2 - O que são projetos socioambientais?"
+            },
+            "lbl-1f6d0928": {
+                "texto": "Gestão de Emissões de CO<sub>2</sub> e Créditos"
+            },
+            "lbl-31a4ce49": {
+                "texto": "3 - Como é feita a compensação dos créditos que eu vou comprar?"
+            },
+            "lbl-4950105a": {
+                "texto": "7 - O que é CO<sub>2</sub>?"
+            },
+            "lbl-57f598f7": {
+                "texto": "Cadastrar Projeto Ambiental"
+            },
+            "lbl-667ab668": {
+                "texto": "9 - Quais metodologias são utilizadas?"
+            },
+            "lbl-6bbf0052": {
+                "texto": "Perguntas frequentes"
+            },
+            "lbl-76faca28": {
+                "texto": "Os projetos que irão mudar sua empresa!"
+            },
+            "lbl-7c65e342": {
+                "texto": "8 - O que é Fator de Emissão de CO<sub>2</sub>?"
+            },
+            "lbl-9b8cdf9f": {
+                "texto": "6 - Como nasce um projeto socioambiental?"
+            },
+            "lbl-c180587a": {
+                "texto": "Apoiar a sua Cadeia de Fornecedores"
+            },
+            "lbl-c5153a5e": {
+                "texto": "Calculadoras e Ferramentas de Integração"
+            },
+            "lbl-d7c5ace7": {
+                "texto": "1 - O que é crédito de carbono?"
+            },
+            "lbl-dcf05f3f": {
+                "texto": "Neutralizar Emissões de CO<sub>2</sub>"
+            },
+            "lbl-ec3e436a": {
+                "texto": "Validade e Confiabilidade, conheça nossos parceiros"
+            },
+            "lbl-f2b7ba94": {
+                "texto": "DO COMPROMISSO À AÇÃO"
+            },
+            "lbl-f63eea38": {
+                "texto": "5 - Como é calculado o valor do crédito?"
+            },
+            "lbl-ff1dd8ae": {
+                "texto": "Projetos Sociais & Ambientais apoiados"
+            },
+            "txt-05c59b66": {
+                "texto": "Os créditos de carbono são emitidos por organizações governamentais nacionais ou internacionais. Já mencionamos os acordos de Kyoto e Paris que criaram os primeiros mercados internacionais de carbono."
+            },
+            "txt-120402d2": {
+                "texto": "Ocultar mapa de projetos!"
+            },
+            "txt-14ba0907": {
+                "texto": "APIs e calculadoras online para otimizar compensações e engajar stakeholders"
+            },
+            "txt-1d302169": {
+                "texto": "Modelo full service na gestão de créditos de carbono. Desde a geração de créditos de carbono, até a redução de gastos na compra de créditos de carbono, gestão de emissões e uso de ferramentas integradas de cálculo das emissões de CO<sub>2</sub>"
+            },
+            "txt-23b40387": {
+                "texto": "Negociar, comprar e registrar créditos de carbono. Maior diversidade e rastreabilidade de projetos certificados"
+            },
+            "txt-3591af63": {
+                "texto": "O Pagamento por serviços ambientais (PSA) foi a maneira encontrada para “precificar” práticas ambientais e incentivar a conservação através de remunerações para quem protege o meio ambiente. Esse cenário corresponde ao princípio do pagador-poluidor e protetor-recebedor, ou seja, aquele que está impactando negativamente o meio ambiente deve “pagar” para aquele que, voluntariamente, conserva ou adota medidas e práticas mais sustentáveis. O mercado de crédito de carbono se tornou o principal projeto de PSA utilizado pelos países.\n\nO Protocolo de Kyoto de 1997 e o Acordo de Paris de 2015 foram acordos internacionais que estabeleceram metas internacionais de emissões de CO<sub>2</sub>. Com este último ratificado por todos, exceto seis países, eles deram origem a metas nacionais de emissões e os regulamentos para apoiá-los.\n\nCom esses novos regulamentos em vigor, a pressão sobre as empresas para encontrar maneiras de reduzir sua pegada de carbono está crescendo."
+            },
+            "txt-393bb704": {
+                "texto": "Faça a sua parte na compensação de emissões de carbono da sua empresa e contribua com a redução das mudanças climáticas."
+            },
+            "txt-3e8f27a2": {
+                "texto": "Ferramenta de cálculo e gestão de emissões. Estoque e registro de neutralizações de carbono"
+            },
+            "txt-41004ad4": {
+                "texto": "Projetos ambientais que reduzem ou evitam suas emissões são os geradores de créditos de carbono, ou seja, aqueles que recebem a certificação. Já aqueles considerados poluidores, podem comprar esses créditos, na mesma proporção, para compensar seu impacto ambiental. Durante essa comercialização, o crédito de carbono funciona como 'dinheiro ou ação' para incentivar os projetos ambientais, que, muitas vezes, dependem desse apoio financeiro para manter suas atividades e ações de desenvolvimento sustentável ao longo dos anos.\n\nExistem diversos projetos que conseguem gerar crédito de carbono através de práticas sustentáveis. Alguns desses exemplos são:\n\nSubstituição de combustível não renovável por biomassa renovável em fábricas\nImplementação de tecnologias limpas, como parques eólicos e painéis solares\nPreservação florestal de grandes áreas\n\nA quantidade de carbono evitada a partir dessas atividades é contabilizada e acumulada em forma de crédito para o projeto em questão. Todos esses projetos passam por monitoramento e verificações para comprovar veracidade das ações, para então, serem emitidas as RCEs."
+            },
+            "txt-4ba3e217": {
+                "texto": "Veja como você pode atingir os seus compromissos ESG e ajudar a viabilizar projetos socioambientais certificados. Carbon Fair é a primeira plataforma brasileira de negociação e gestão de crédito de carbono voluntários do Brasil."
+            },
+            "txt-60c0f210": {
+                "texto": "Buscar"
+            },
+            "txt-62a72bcb": {
+                "texto": "Conheça e apoie projetos sociais certificados"
+            },
+            "txt-7019e6b2": {
+                "texto": "Crédito de carbono, também conhecido como Reduções Certificadas de Emissões (RCEs) é considerado um certificado que comprova redução das emissões de gases de efeito estufa de um projeto. Por convenção internacional, cada crédito de carbono que for gerado corresponde a uma tonelada de carbono que deixou de ser emitida na atmosfera."
+            },
+            "txt-76322293": {
+                "texto": "Plataforma criada por pesquisadores e empresas que passaram pela Universidade"
+            },
+            "txt-7caf277f": {
+                "texto": "Vamos desenvolver juntos, projetos de redução e/ou captura de carbono na sua Cadeia de Fornecedores ou outros setores"
+            },
+            "txt-882cb980": {
+                "texto": "Toneladas de CO<sub>2</sub> compensados"
+            },
+            "txt-8b195657": {
+                "texto": "<p className='text-sm mb-2'>Os fatores de emissão de CO<sub>2</sub> são calculados de acordo com a ferramenta metodológica aprovada pelo Conselho Executivo do MDL e têm como objetivo estimar a contribuição, em termos de redução de emissões de CO<sub>2</sub>, de um projeto de MDL que gere eletricidade para a rede.</p><p className='text-sm mb-2'>A ferramenta para cálculo do fator de emissão para o sistema elétrico (Tool to calculate the emission factor for an electricity system) é constantemente atualizada.</p><p className='text-sm mb-2'>Resumidamente, o fator de emissão do sistema interligado para fins de MDL é uma combinação do fator de emissão da margem de operação, que reflete a intensidade das emissões de CO<sub>2</sub> da energia despachada na margem, com o fator de emissão da margem de construção, que reflete a intensidade das emissões de CO<sub>2</sub> das últimas usinas construídas.</p><p className='text-sm mb-2'>É um algoritmo amplamente utilizado para quantificar a contribuição futura de uma usina que vai gerar energia elétrica para a rede em termos de redução de emissões de CO<sub>2</sub> em relação a um cenário de base. Esse fator serve para quantificar a emissão que está sendo deslocada na margem. A sua utilidade está associada a projetos de MDL e se aplica, exclusivamente, para estimar as reduções certificadas de emissões (RCEs) dos projetos de MDL.</p><a href='https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/sirene/dados-e-ferramentas/fatores-de-emissao#:~:text=Os%20fatores%20de%20emiss%C3%A3o%20de,gere%20eletricidade%20para%20a%20rede.' target='_blank' rel='noreferrer' style={{ textDecoration: 'underline' }}>Ministério da Ciência, Tecnologia e Inovação (www.gov.br)</a>"
+            },
+            "txt-8df33da2": {
+                "texto": "Apoio na definição de metodologia e certificação de projetos"
+            },
+            "txt-8e7bf1dc": {
+                "texto": "A plataforma Carbon Fair é formada por um grupo multi-stakeholder que ajuda a garantir que os projetos apoiados proporcionam os benefícios propostos e que o padrão Carbon Fair Standard (CFS), primeiro padrão de certificação brasileiro, certifica projetos com soluções baseadas da natureza (Nature Based Solutions), uso de pesquisa e tecnologia (hard science), adicionalidade e com processos mensuráveis, transparentes, rastreáveis e replicáveis.\n\nAlém disso, a plataforma também possibilita a gestão de emissões de carbono de empresa e faz o uso de tecnologia de blockchain.\n\nDessa forma, queremos viabilizar o máximo de projetos ambientais e sociais, e ajudar empresas e pessoas a atingirem seus objetos sustentáveis."
+            },
+            "txt-98f7fa6f": {
+                "texto": "Buscar"
+            },
+            "txt-a0453491": {
+                "texto": "Projetos ambientais apoiados"
+            },
+            "txt-ae1f5b13": {
+                "texto": "Projetos que reduzam as emissões de CO<sub>2</sub> e impactos ambientais e sociais podem participar"
+            },
+            "txt-b07a670a": {
+                "texto": "Apoio na definição de metodologia e certificação de projetos"
+            },
+            "txt-bacce3b4": {
+                "texto": "Empresas e eventos neutralizados"
+            },
+            "txt-bd9044a0": {
+                "texto": "O dióxido de carbono (CO<sub>2</sub>), também conhecido como gás carbônico, é um composto químico gasoso que provoca graves desequilíbrios no efeito estufa do planeta Terra. Ele possui um átomo de carbono e dois átomos de oxigênio em sua composição química. Em condições normais, esse gás não apresenta cheiro ou sabor, sendo de difícil detecção.\n\nEssencial para a vida no planeta, o carbono é encontrado na atmosfera na forma de dióxido de carbono (CO<sub>2</sub>). Ele pode ser produzido a partir da oxidação do monóxido de carbono. Por outro lado, vários organismos liberam esse gás mediante ao processo de respiração, inclusive plantas e árvores."
+            },
+            "txt-c228b3c0": {
+                "texto": "Apoio na realização de parcerias de pesquisa, metodologia e verificação de créditos de carbono"
+            },
+            "txt-c56cec7a": {
+                "texto": "Visualizar mapa de projetos!"
+            },
+            "txt-d25e3047": {
+                "texto": "Certificar a ação de neutralização de carbono e obter o Selo e Certificado"
+            },
+            "txt-dcec4172": {
+                "texto": "A plataforma Carbon Fair conta com o apoio de diversos cientistas, pesquisadores, ambientalistas, governo, empresas, empreendedores e pessoas que buscam atuar contra as mudanças climáticas e promovendo ações socioambientais. Venha ser um parceiro!"
+            },
+            "txt-e16675ba": {
+                "texto": "Consultoria que atua desde 2008 apoiando empresas e projetos de créditos de carbono"
+            },
+            "txt-ee44343b": {
+                "texto": "<p className='text-sm mb-2'>Quando se trata da venda de créditos de carbono no mercado de carbono, há dois mercados distintos e significativos para escolher.</p><ul className='mb-2 list-disc text-sm pl-4'><li>Um é um mercado regulamentado, estabelecido por regulamentos de “cap-and-trade” nos níveis regional e estadual.</li><li>O outro é um mercado voluntário onde empresas e indivíduos compram créditos (por conta própria) para compensar suas emissões de carbono.</li></ul><p className='text-sm mb-2'>Pense assim: o mercado regulatório é obrigatório, enquanto o mercado voluntário é opcional.</p><p className='text-sm mb-2'>Quando se trata do mercado regulatório, cada empresa que opera sob um programa de cap-and-trade recebe um certo número de créditos de carbono a cada ano. Algumas dessas empresas produzem menos emissões do que o número de créditos que lhes são atribuídos, dando-lhes um excedente de créditos de carbono.</p><p className='text-sm mb-2'>O número de créditos emitidos a cada ano é normalmente baseado em metas de emissões. Os créditos são frequentemente emitidos sob o que é conhecido como um programa de “cap-and-trade”. Os reguladores estabelecem um limite para as emissões de carbono – o “cap”. Esse limite diminui lentamente ao longo do tempo, tornando cada vez mais difícil para as empresas permanecerem dentro desse limite.</p><p className='text-sm mb-2'>Você pode pensar nos créditos de carbono como uma “carta de permissão” para uma empresa emitir até uma determinada quantidade de CO<sub>2</sub> e naquele ano.</p>"
+            },
+            "txt-f6ff72ef": {
+                "texto": "Centro de Inovação e Empreendedorismo na USP. APoio na realização de parcerias de pesquisa"
+            },
+            "txt-fd40fba8": {
+                "texto": "Todos os projetos registrados na plataforma Carbon Fair seguem os padrões Verra - VCS e CFS - Carbon Fair Standard, e são certificados e verificados por empresas e institutos de pesquisa reconhecidos nacional e internacionalmente. Veja mais em Quem Somos.\n\nAlém disso, trabalhamos também com projetos passíveis de verificação ou já verificados pelos seguintes padrões do mercado de carbono: American Carbon Registry (ACR), Climate, Community and Biodiversity (CCB), Gold Standard (GS), Mecanismo de Desenvolvimento Limpo (MDL), Social Carbon (SC) e Verified Carbon Standard (VCS).\n\nQuais tipos de projetos apoiamos?\n\nEnergia: Biomassa renovável, Energia eólica, Energia solar, Pequena Central Hidrelétrica, Metano para energia, Eficiência Energética, Fogões eficientes e Troca de combustível.\n\nAgricultura, Floresta e Uso do Solo: Agricultura Regenerativa e Agrofloresta, Restauro florestal com espécies nativas, REDD+ e Outros projetos AFOLU (Agriculture, Forests and other land use).\n\nResíduos: Reciclagem e/ou reuso, Compostagem, Biodigestores, Purificadores de água e Outros projetos de manejo de resíduos."
+            }
+        }
+    },
+    {
+        "lang": "es",
+        "id": "projeto",
+        "folder_1": "proyecto",
+        "folder_2": "terrus-carbon-coffee",
+        "text": {
+            "btn-27bb1ab5": {
+                "texto": "Enviar"
+            },
+            "fld-5347a286": {
+                "texto": "Ingrese su nombre"
+            },
+            "fld-90d74c3f": {
+                "texto": "Ingrese su email"
+            },
+            "lbl-0d5f3fae": {
+                "texto": "Nombre:"
+            },
+            "lbl-1ade420b": {
+                "texto": "Status"
+            },
+            "lbl-4d182c9c": {
+                "texto": "Recibe novedades de este proyecto"
+            },
+            "lbl-4d3c2b81": {
+                "texto": "Local"
+            },
+            "lbl-5c0b678a": {
+                "texto": "Tipo de Proyecto"
+            },
+            "lbl-5e07586f": {
+                "texto": "Bioma"
+            },
+            "lbl-9888ef40": {
+                "texto": "Indicadores de este proyecto"
+            },
+            "lbl-ba9a21c8": {
+                "texto": "Estándar"
+            },
+            "lbl-cc365f35": {
+                "texto": "Email:"
+            },
+            "lbl-dbe974f1": {
+                "texto": "Terrus Carbon Coffee"
+            },
+            "lbl-e1c99165": {
+                "texto": "Toneladas de CO<sub>2eq</sub> Compensadas"
+            },
+            "txt-3a1fba8c": {
+                "texto": "Árboles"
+            },
+            "txt-46505aa7": {
+                "texto": "El proyecto Terrus Carbon Coffee propone traer una tecnología, un nuevo sistema de identificación y división de parcelas, eliminando la subjetividad del profesional en el proceso de pruebas para la preparación de la siembra de café, lo que proporciona una mayor precisión en la identificación del suelo, reducción en la cantidad de muestras necesarias en este proceso de prueba y permitiendo el mapeo de lugares con potencial de emisión de gases para almacenar carbono."
+            },
+            "txt-56a2341a": {
+                "texto": "ton de CO<sub>2eq</sub>"
+            },
+            "txt-bc99bd8c": {
+                "texto": "Personas beneficiadas"
+            }
+        }
+    },
+    {
+        "lang": "pt-br",
+        "id": "projeto",
+        "folder_1": "projeto",
+        "folder_2": "terrus-carbon-coffee",
+        "text": {
+            "btn-27bb1ab5": {
+                "texto": "Enviar"
+            },
+            "fld-5347a286": {
+                "texto": "Digite seu nome"
+            },
+            "fld-90d74c3f": {
+                "texto": "Digite seu email"
+            },
+            "lbl-0d5f3fae": {
+                "texto": "Nome:"
+            },
+            "lbl-1ade420b": {
+                "texto": "Status"
+            },
+            "lbl-4d182c9c": {
+                "texto": "Receba novidades deste projeto"
+            },
+            "lbl-4d3c2b81": {
+                "texto": "Local"
+            },
+            "lbl-5c0b678a": {
+                "texto": "Tipo de Projeto"
+            },
+            "lbl-5e07586f": {
+                "texto": "Bioma"
+            },
+            "lbl-9888ef40": {
+                "texto": "Indicadores deste projeto"
+            },
+            "lbl-ba9a21c8": {
+                "texto": "Padrão"
+            },
+            "lbl-cc365f35": {
+                "texto": "Email:"
+            },
+            "lbl-dbe974f1": {
+                "texto": "Terrus Carbon Coffee"
+            },
+            "lbl-e1c99165": {
+                "texto": "Toneladas de CO<sub>2eq</sub> Compensados"
+            },
+            "txt-3a1fba8c": {
+                "texto": "Árvores"
+            },
+            "txt-46505aa7": {
+                "texto": "O projeto Terrus Carbon Coffee tem como proposta trazer uma tecnologia, um novo sistema de identificação e divisão de talhões, eliminando a subjetividade do profissional no processo de testagem para a preparação de plantio de café, trazendo assim maior precisão na identificação do solo, redução na quantidade de amostras necessárias nesse processo de teste e possibilitando mapeamento de locais com potenciais de emissões de gases para estocar carbono."
+            },
+            "txt-56a2341a": {
+                "texto": "ton de CO<sub>2eq</sub>"
+            },
+            "txt-bc99bd8c": {
+                "texto": "Pessoas beneficiadas"
+            }
+        }
+    },
+    {
+        "lang": "en",
+        "id": "projeto",
+        "folder_1": "project",
+        "folder_2": "terrus-carbon-coffee",
+        "text": {
+            "btn-27bb1ab5": {
+                "texto": "Send"
+            },
+            "fld-5347a286": {
+                "texto": "Enter your name"
+            },
+            "fld-90d74c3f": {
+                "texto": "Enter your email"
+            },
+            "lbl-0d5f3fae": {
+                "texto": "Nome:"
+            },
+            "lbl-1ade420b": {
+                "texto": "Status"
+            },
+            "lbl-4d182c9c": {
+                "texto": "Receive updates from this project"
+            },
+            "lbl-4d3c2b81": {
+                "texto": "Location"
+            },
+            "lbl-5c0b678a": {
+                "texto": "Project Type"
+            },
+            "lbl-5e07586f": {
+                "texto": "Biome"
+            },
+            "lbl-9888ef40": {
+                "texto": "Indicators of this project"
+            },
+            "lbl-ba9a21c8": {
+                "texto": "Standard"
+            },
+            "lbl-cc365f35": {
+                "texto": "Email:"
+            },
+            "lbl-dbe974f1": {
+                "texto": "Terrus Carbon Coffee"
+            },
+            "lbl-e1c99165": {
+                "texto": "Tons of CO<sub>2eq</sub> Offset"
+            },
+            "txt-3a1fba8c": {
+                "texto": "Trees"
+            },
+            "txt-46505aa7": {
+                "texto": "The Terrus Carbon Coffee project aims to bring a technology, a new system for identifying and dividing plots, eliminating the subjectivity of the professional in the testing process for coffee planting preparation, thus providing greater precision in soil identification, reducing the number of samples necessary in this testing process, and enabling the mapping of locations with potential emissions of gases to store carbon."
+            },
+            "txt-56a2341a": {
+                "texto": "tons of CO<sub>2eq</sub>"
+            },
+            "txt-bc99bd8c": {
+                "texto": "Benefited People"
+            }
+        }
+    },
+    {
+        "lang": "en",
+        "id": "projetos-apoiados",
+        "folder_1": "supported-projects",
+        "text": {
+            "btn-f1de7a3b": {
+                "texto": "Learn More"
+            },
+            "fld-07c2892e": {
+                "texto": "Select"
+            },
+            "fld-07fb1e0b": {
+                "texto": "Select"
+            },
+            "fld-5eeb9fec": {
+                "texto": "Select"
+            },
+            "lbl-3041d177": {
+                "texto": "What types of projects do we support?"
+            },
+            "lbl-3a130a12": {
+                "texto": "No projects found"
+            },
+            "lbl-43cbcddf": {
+                "texto": "ENERGY"
+            },
+            "lbl-69988e83": {
+                "texto": "LOCATION"
+            },
+            "lbl-7a0f9613": {
+                "texto": "BIOME"
+            },
+            "lbl-a2cfb445": {
+                "texto": "WASTE"
+            },
+            "lbl-a35cb6f8": {
+                "texto": "AGRICULTURE, FOREST, AND LAND USE"
+            },
+            "lbl-d0a3d003": {
+                "texto": "PROJECT TYPE"
+            },
+            "lbl-df0d0911": {
+                "texto": "How can I know if the projects are of high quality?"
+            },
+            "lbl-df72d891": {
+                "texto": "NAME"
+            },
+            "lbl-e71f0cd9": {
+                "texto": "Projects with Scientifically Verified Carbon Credits"
+            },
+            "lbl-f39abefd": {
+                "texto": "Supported Projects"
+            },
+            "txt-0261587f": {
+                "texto": "Recycling and/or reuse, Composting, Biogas digesters, Water purifiers, and Other waste management projects."
+            },
+            "txt-4cf25321": {
+                "texto": "Regenerative Agriculture and Agroforestry, forest restoration with native species, REDD+ and other AFOLU projects (Agriculture, Forests and other land use)."
+            },
+            "txt-6fa3a15f": {
+                "texto": "No project(s) match the provided parameters."
+            },
+            "txt-af2bb997": {
+                "texto": "Project name"
+            },
+            "txt-d340cfdc": {
+                "texto": "Renewable Biomass, Small Hydro Power Plant, Methane for Energy, Energy Efficiency, Efficient Stoves, and Fuel Switch."
+            },
+            "txt-e882b18d": {
+                "texto": "All projects registered on the Carbon Fair platform follow the Verra Verified Carbon Standard (VCS) and Carbon Fair Standard (CFS) standards, and are certified and verified by nationally and internationally recognized companies and research institutes. See more in About Us. Additionally, we work with projects eligible for verification or already verified by the following carbon market standards: American Carbon Registry (ACR), Climate, Community and Biodiversity (CCB), Gold Standard (GS), Clean Development Mechanism (CDM), Social Carbon (SC), and Verified Carbon Standard (VCS)."
+            },
+            "txt-efb01f53": {
+                "texto": "Carbon Fair supports specific carbon offsetting standards that ensure transparency and quality in the creation, quantification, and verification of offset projects. These standards require that offsets be real, additional (i.e., would not have occurred in a “business as usual” scenario), permanent, quantifiable, never counted or sold twice, and independently verified. Currently, we only use the ACR, CCB, CFS (Carbon Fair Standard), GS, CDM, SC, and VCS standards. See more details in About Us."
+            },
+            "txt-f5fc459c": {
+                "texto": "Monitoring CO<sub>2</sub> emissions goals and reducing costs through the purchase and use of carbon credits."
+            }
+        }
+    },
+    {
+        "lang": "pt-br",
+        "id": "projetos-apoiados",
+        "folder_1": "projetos-apoiados",
+        "text": {
+            "btn-f1de7a3b": {
+                "texto": "Conheça"
+            },
+            "fld-07c2892e": {
+                "texto": "Selecione"
+            },
+            "fld-07fb1e0b": {
+                "texto": "Selecione"
+            },
+            "fld-5eeb9fec": {
+                "texto": "Selecione"
+            },
+            "lbl-3041d177": {
+                "texto": "Quais tipos de projetos apoiamos?"
+            },
+            "lbl-3a130a12": {
+                "texto": "Não encontramos nenhum projeto"
+            },
+            "lbl-43cbcddf": {
+                "texto": "ENERGIA"
+            },
+            "lbl-69988e83": {
+                "texto": "LOCAL"
+            },
+            "lbl-7a0f9613": {
+                "texto": "BIOMA"
+            },
+            "lbl-a2cfb445": {
+                "texto": "RESÍDUOS"
+            },
+            "lbl-a35cb6f8": {
+                "texto": "AGRICULTURA, FLORESTA E USO DO SOLO"
+            },
+            "lbl-d0a3d003": {
+                "texto": "TIPO DO PROJETO"
+            },
+            "lbl-df0d0911": {
+                "texto": "Como posso saber se os projetos são de alta qualidade?"
+            },
+            "lbl-df72d891": {
+                "texto": "NOME"
+            },
+            "lbl-e71f0cd9": {
+                "texto": "Projetos com créditos de carbono Verificados Cientificamente"
+            },
+            "lbl-f39abefd": {
+                "texto": "Projetos apoiados"
+            },
+            "txt-0261587f": {
+                "texto": "Reciclagem e/ou reuso, Compostagem, Biodigestores, Purificadores de água e Outros projetos de manejo de resíduos."
+            },
+            "txt-4cf25321": {
+                "texto": "Agricultura Regenerativa e Agrofloresta, restauração florestal com espécies nativas, REDD+ e Outros projetos AFOLU (Agriculture, Forests and other land use)."
+            },
+            "txt-6fa3a15f": {
+                "texto": "Não foi possível encontrar o(s) projetos(s) com os parâmetros acima."
+            },
+            "txt-af2bb997": {
+                "texto": "Nome do projeto"
+            },
+            "txt-d340cfdc": {
+                "texto": "Biomassa renovável, Pequena Central Hidrelétrica, Metano para energia, Eficiência Energética, Fogões eficientes e Troca de combustível."
+            },
+            "txt-e882b18d": {
+                "texto": "Todos os projetos registrados na plataforma Carbon Fair seguem os padrões Verra Verified Carbon Standard (VCS) e Carbon Fair Standard (CFS), e são certificados e verificados por empresas e institutos de pesquisa reconhecidos nacional e internacionalmente. Veja mais em Quem Somos. Além disso, trabalhamos com projetos passíveis de verificação ou já verificados pelos seguintes padrões do mercado de carbono: American Carbon Registry (ACR), Climate, Community and Biodiversity (CCB), Gold Standard (GS), Mecanismo de Desenvolvimento Limpo (MDL), Social Carbon (SC) e Verified Carbon Standard (VCS)."
+            },
+            "txt-efb01f53": {
+                "texto": "Carbon Fair apoia padrões específicos de compensação de carbono, que garantem transparência e qualidade na criação, quantificação e verificação de projetos de compensação. Esses padrões exigem que as compensações sejam reais, adicionais (ou seja, não teriam acontecido em um cenário “business as usual”), permanentes, quantificáveis, nunca contados ou vendidos duas vezes e verificados independentemente. Atualmente utilizamos apenas os padrões ACR, CCB, CFS (Carbon Fair Standard), GS, MDL, SC e VCS. Veja mais detalhes em Quem Somos."
+            },
+            "txt-f5fc459c": {
+                "texto": "Acompanhamento de metas de emissões de CO<sub>2</sub> e redução de custo com compra e uso de créditos de carbono."
+            }
+        }
+    },
+    {
+        "lang": "es",
+        "id": "projetos-apoiados",
+        "folder_1": "proyectos-apoyados",
+        "text": {
+            "btn-f1de7a3b": {
+                "texto": "Conozca"
+            },
+            "fld-07c2892e": {
+                "texto": "Seleccione"
+            },
+            "fld-07fb1e0b": {
+                "texto": "Seleccione"
+            },
+            "fld-5eeb9fec": {
+                "texto": "Seleccione"
+            },
+            "lbl-3041d177": {
+                "texto": "¿Qué tipos de proyectos apoyamos?"
+            },
+            "lbl-3a130a12": {
+                "texto": "No encontramos ningún proyecto"
+            },
+            "lbl-43cbcddf": {
+                "texto": "ENERGÍA"
+            },
+            "lbl-69988e83": {
+                "texto": "LOCAL"
+            },
+            "lbl-7a0f9613": {
+                "texto": "BIOMA"
+            },
+            "lbl-a2cfb445": {
+                "texto": "RESIDUOS"
+            },
+            "lbl-a35cb6f8": {
+                "texto": "AGRICULTURA, FORESTACIÓN Y USO DEL SUELO"
+            },
+            "lbl-d0a3d003": {
+                "texto": "TIPO DE PROYECTO"
+            },
+            "lbl-df0d0911": {
+                "texto": "¿Cómo puedo saber si los proyectos son de alta calidad?"
+            },
+            "lbl-df72d891": {
+                "texto": "NOMBRE"
+            },
+            "lbl-e71f0cd9": {
+                "texto": "Proyectos con créditos de carbono Verificados Científicamente"
+            },
+            "lbl-f39abefd": {
+                "texto": "Proyectos apoyados"
+            },
+            "txt-0261587f": {
+                "texto": "Reciclaje y/o reutilización, Compostaje, Biodigestores, Purificadores de agua y Otros proyectos de manejo de residuos."
+            },
+            "txt-4cf25321": {
+                "texto": "Agricultura Regenerativa y Agroforestería, restauración forestal con especies nativas, REDD+ y Otros proyectos AFOLU (Agricultura, Bosques y otros usos del suelo)."
+            },
+            "txt-6fa3a15f": {
+                "texto": "No fue posible encontrar el/los proyecto(s) con los parámetros anteriores."
+            },
+            "txt-af2bb997": {
+                "texto": "Nombre del proyecto"
+            },
+            "txt-d340cfdc": {
+                "texto": "Biomasa renovable, Pequeña Central Hidroeléctrica, Metano para energía, Eficiencia Energética, Estufas eficientes e Intercambio de combustible."
+            },
+            "txt-e882b18d": {
+                "texto": "Todos los proyectos registrados en la plataforma Carbon Fair siguen los estándares Verra Verified Carbon Standard (VCS) y Carbon Fair Standard (CFS), y son certificados y verificados por empresas e institutos de investigación reconocidos nacional e internacionalmente. Vea más en Quiénes somos. Además, trabajamos con proyectos susceptibles de verificación o ya verificados por los siguientes estándares del mercado de carbono: American Carbon Registry (ACR), Climate, Community and Biodiversity (CCB), Gold Standard (GS), Mecanismo de Desarrollo Limpio (MDL), Social Carbon (SC) y Verified Carbon Standard (VCS)."
+            },
+            "txt-efb01f53": {
+                "texto": "Carbon Fair apoya estándares específicos de compensación de carbono, que garantizan transparencia y calidad en la creación, cuantificación y verificación de proyectos de compensación. Estos estándares exigen que las compensaciones sean reales, adicionales (es decir, no habrían ocurrido en un escenario “business as usual”), permanentes, cuantificables, nunca contadas o vendidas dos veces y verificadas independientemente. Actualmente utilizamos solo los estándares ACR, CCB, CFS (Carbon Fair Standard), GS, MDL, SC y VCS. Vea más detalles en Quiénes somos."
+            },
+            "txt-f5fc459c": {
+                "texto": "Seguimiento de metas de emisiones de CO<sub>2</sub> y reducción de costos con la compra y uso de créditos de carbono."
+            }
+        }
+    },
+    {
+        "lang": "pt-br",
+        "id": "quem-somos",
+        "folder_1": "quem-somos",
+        "text": {
+            "lbl-c36f5cd6": {
+                "texto": "Criar uma nova relação de prosperidade entre pessoas, organizações e a natureza"
+            },
+            "lbl-d2a0f671": {
+                "texto": "O Carbon Fair Standard (CFS) exige que os projetos tenham minimamente, os seguintes requisitos:"
+            },
+            "txt-005bd134": {
+                "texto": "Validade e Confiabilidade, conheça nossos parceiros"
+            },
+            "txt-0bda6e4c": {
+                "texto": "Nossa missão começou em 2008, com a primeira plataforma de registro de créditos de carbono brasileira, e hoje com a Carbon Fair, lançamos a primeira plataforma de negociação de créditos de carbono voluntários e socialmente justos utilizada para conectar de forma transparente, simples e efetiva projetos socioambientais, empresas e pessoas.\n\nNa Carbon Fair trabalhamos com projetos passíveis de verificação ou já verificados pelos seguintes padrões do mercado de carbono: American Carbon Registry (ACR), Climate, Community and Biodiversity (CCB), Carbon Fair Standard (CFS), Gold Standard (GS), Mecanismo de Desenvolvimento Limpo (MDL), Social Carbon (SC) e Verified Carbon Standard (VCS).\n\nA plataforma Carbon Fair é formada por um grupo multi-stakeholder que ajuda a garantir que os projetos apoiados proporcionam os benefícios propostos e que o padrão Carbon Fair Standard (CFS), primeiro padrão de certificação brasileiro, certifica projetos com soluções baseadas da natureza (Nature Based Solutions), uso de pesquisa e tecnologia (hard science), adicionalidade e com processos mensuráveis, transparentes, rastreáveis e replicáveis.\n\nAlém disso, a plataforma também possibilita a gestão de emissões de carbono de empresa e faz o uso de tecnologia de blockchain.\n\nDessa forma, queremos viabilizar o máximo de projetos ambientais e sociais, e ajudar empresas e pessoas a atingirem seus objetos sustentáveis."
+            },
+            "txt-18e67074": {
+                "texto": "Impactos sociais e ambientais representativos, mensuráveis e com potencial de replicação"
+            },
+            "txt-1c0958db": {
+                "texto": "A plataforma Carbon Fair conta com o apoio de diversos cientistas, pesquisadores, ambientalistas, governo, empresas, empreendedores e pessoas que buscam atuar contra as mudanças climáticas e promovendo ações socioambientais. Venha ser um parceiro!"
+            },
+            "txt-6f293c3c": {
+                "texto": "Contrato e compromisso de comercializar e disponibilizar os créditos de carbono e reduções de emissões apenas na plataforma Carbon Fair. O projeto ambiental poderá retirar os seus créditos de carbono disponíveis da plataforma, porém com aviso prévio e restrito aos créditos disponíveis. Os créditos já comercializados e/ou compensados (offset) não podem ser mais utilizados. Solicite mais informações sobre políticas para evitar a dupla contagem dos créditos emitidos."
+            },
+            "txt-761fdb74": {
+                "texto": "Quem somos"
+            },
+            "txt-99e4aee1": {
+                "texto": "Benefícios alinhados aos ODS (Objetivos do Desenvolvimento Sustentável)"
+            },
+            "txt-ab413467": {
+                "texto": "Impacto econômico positivo no entorno e necessidade dos recursos financeiros da venda dos créditos de carbono para se viabilizarem"
+            },
+            "txt-c2f2681b": {
+                "texto": "Efetiva redução de emissões de Gases de Efeito Estufa (GEE) e adicionalidade, quando comparada as exigências locais e prática de mercado"
+            },
+            "txt-f805e0df": {
+                "texto": "Processo e tecnologia de redução de emissões de CO<sub>2</sub> comprovada e com metodologia reconhecida por institutos de pesquisa reconhecidos ou plataformas de créditos de carbono internacionais"
+            },
+            "txt-fda49bf7": {
+                "texto": "Carbon Fair é a primeira plataforma full service em gestão e negociação de créditos de carbono, auxiliando empresas a atingirem suas metas e compromissos ambientais.\n\nPioneira no mercado de créditos de carbono, buscamos apoiar projetos socioambientais certificados por Institutos de Pesquisa Brasileiros e empresas reconhecidas internacionalmente."
+            }
+        }
+    },
+    {
+        "lang": "en",
+        "id": "quem-somos",
+        "folder_1": "who-we-are",
+        "text": {
+            "lbl-c36f5cd6": {
+                "texto": "Creating a new relationship of prosperity between people, organizations, and nature"
+            },
+            "lbl-d2a0f671": {
+                "texto": "The Carbon Fair Standard (CFS) requires projects to have, at a minimum, the following requirements:"
+            },
+            "txt-005bd134": {
+                "texto": "Validity and Reliability, meet our partners"
+            },
+            "txt-0bda6e4c": {
+                "texto": "Our mission began in 2008, with the first Brazilian carbon credit registration platform, and today with Carbon Fair, we launch the first platform for trading voluntary and socially just carbon credits used to transparently, simply, and effectively connect socio-environmental projects, companies, and people.\n\nAt Carbon Fair, we work with projects that are verifiable or already verified by the following carbon market standards: American Carbon Registry (ACR), Climate, Community and Biodiversity (CCB), Carbon Fair Standard (CFS), Gold Standard (GS), Clean Development Mechanism (CDM), Social Carbon (SC), and Verified Carbon Standard (VCS).\n\nThe Carbon Fair platform is formed by a multi-stakeholder group that helps ensure that supported projects provide the proposed benefits and that the Carbon Fair Standard (CFS), the first Brazilian certification standard, certifies projects with nature-based solutions, use of research and technology (hard science), additionality, and with measurable, transparent, traceable, and replicable processes.\n\nAdditionally, the platform also enables company carbon emissions management and uses blockchain technology.\n\nIn this way, we want to enable the maximum number of environmental and social projects, and help companies and people achieve their sustainable goals."
+            },
+            "txt-18e67074": {
+                "texto": "Representative, measurable social and environmental impacts with potential for replication"
+            },
+            "txt-1c0958db": {
+                "texto": "The Carbon Fair platform is supported by various scientists, researchers, environmentalists, government, companies, entrepreneurs, and people who seek to act against climate change and promote socio-environmental actions. Come be a partner!"
+            },
+            "txt-6f293c3c": {
+                "texto": "Contract and commitment to market and make available carbon credits and emission reductions only on the Carbon Fair platform. The environmental project may withdraw its available carbon credits from the platform, but with prior notice and restricted to available credits. Credits already marketed and/or offset cannot be used anymore. Request more information on policies to avoid double counting of issued credits."
+            },
+            "txt-761fdb74": {
+                "texto": "Who we are"
+            },
+            "txt-99e4aee1": {
+                "texto": "Benefits aligned with the Sustainable Development Goals (SDGs)"
+            },
+            "txt-ab413467": {
+                "texto": "Positive economic impact on the surroundings and the need for financial resources from the sale of carbon credits to become viable"
+            },
+            "txt-c2f2681b": {
+                "texto": "Effective reduction of Greenhouse Gas (GHG) emissions and additionality, when compared to local requirements and market practice"
+            },
+            "txt-f805e0df": {
+                "texto": "Proven CO<sub>2</sub> emission reduction process and technology with methodology recognized by recognized research institutes or international carbon credit platforms"
+            },
+            "txt-fda49bf7": {
+                "texto": "Carbon Fair is the first full-service platform in carbon credit management and trading, helping companies achieve their environmental goals and commitments.\n\nA pioneer in the carbon credit market, we seek to support socio-environmental projects certified by Brazilian Research Institutes and internationally recognized companies."
+            }
+        }
+    },
+    {
+        "lang": "es",
+        "id": "quem-somos",
+        "folder_1": "quien-somos",
+        "text": {
+            "lbl-c36f5cd6": {
+                "texto": "Crear una nueva relación de prosperidad entre personas, organizaciones y la naturaleza"
+            },
+            "lbl-d2a0f671": {
+                "texto": "El Carbon Fair Standard (CFS) exige que los proyectos tengan, como mínimo, los siguientes requisitos:"
+            },
+            "txt-005bd134": {
+                "texto": "Validez y confiabilidad, conoce a nuestros socios"
+            },
+            "txt-0bda6e4c": {
+                "texto": "Nuestra misión comenzó en 2008, con la primera plataforma de registro de créditos de carbono brasileña, y hoy con Carbon Fair, lanzamos la primera plataforma de negociación de créditos de carbono voluntarios y socialmente justos utilizada para conectar de forma transparente, simple y efectiva proyectos socioambientales, empresas y personas.\n\nEn Carbon Fair trabajamos con proyectos susceptibles de verificación o ya verificados por los siguientes estándares del mercado de carbono: American Carbon Registry (ACR), Climate, Community and Biodiversity (CCB), Carbon Fair Standard (CFS), Gold Standard (GS), Mecanismo de Desarrollo Limpio (MDL), Social Carbon (SC) y Verified Carbon Standard (VCS).\n\nLa plataforma Carbon Fair está formada por un grupo multi-stakeholder que ayuda a garantizar que los proyectos apoyados proporcionen los beneficios propuestos y que el estándar Carbon Fair Standard (CFS), primer estándar de certificación brasileño, certifica proyectos con soluciones basadas en la naturaleza (Nature Based Solutions), uso de investigación y tecnología (hard science), adicionalidad y con procesos mensurables, transparentes, rastreables y replicables.\n\nAdemás, la plataforma también permite la gestión de emisiones de carbono de la empresa y hace uso de la tecnología blockchain.\n\nDe esta forma, queremos viabilizar el máximo de proyectos ambientales y sociales, y ayudar a las empresas y personas a alcanzar sus objetivos sostenibles."
+            },
+            "txt-18e67074": {
+                "texto": "Impactos sociales y ambientales representativos, mensurables y con potencial de replicación"
+            },
+            "txt-1c0958db": {
+                "texto": "La plataforma Carbon Fair cuenta con el apoyo de diversos científicos, investigadores, ambientalistas, gobierno, empresas, emprendedores y personas que buscan actuar contra el cambio climático y promover acciones socioambientales. ¡Ven a ser un socio!"
+            },
+            "txt-6f293c3c": {
+                "texto": "Contrato y compromiso de comercializar y disponibilizar los créditos de carbono y reducciones de emisiones solo en la plataforma Carbon Fair. El proyecto ambiental podrá retirar sus créditos de carbono disponibles de la plataforma, pero con aviso previo y restringido a los créditos disponibles. Los créditos ya comercializados y/o compensados (offset) no pueden ser más utilizados. Solicite más información sobre políticas para evitar la doble contabilización de los créditos emitidos."
+            },
+            "txt-761fdb74": {
+                "texto": "Quiénes somos"
+            },
+            "txt-99e4aee1": {
+                "texto": "Beneficios alineados con los Objetivos de Desarrollo Sostenible (ODS)"
+            },
+            "txt-ab413467": {
+                "texto": "Impacto económico positivo en el entorno y necesidad de los recursos financieros de la venta de los créditos de carbono para viabilizarse"
+            },
+            "txt-c2f2681b": {
+                "texto": "Reducción efectiva de las emisiones de Gases de Efecto Invernadero (GEI) y adicionalidad, cuando se compara con las exigencias locales y la práctica de mercado"
+            },
+            "txt-f805e0df": {
+                "texto": "Proceso y tecnología de reducción de emisiones de CO<sub>2</sub> comprobada y con metodología reconocida por institutos de investigación reconocidos o plataformas de créditos de carbono internacionales"
+            },
+            "txt-fda49bf7": {
+                "texto": "Carbon Fair es la primera plataforma full service en gestión y negociación de créditos de carbono, ayudando a las empresas a alcanzar sus metas y compromisos ambientales.\n\nPionera en el mercado de créditos de carbono, buscamos apoyar proyectos socioambientales certificados por Institutos de Investigación Brasileños y empresas reconocidas internacionalmente."
+            }
+        }
+    },
+    {
+        "lang": "pt-br",
+        "id": "selos-de-neutralizacao",
+        "folder_1": "selos-de-neutralizacao",
+        "text": {
+            "btn-49679470": {
+                "texto": "CLIQUE AQUI!"
+            },
+            "btn-60e0a792": {
+                "texto": "SAIBA MAIS"
+            },
+            "btn-63277bd4": {
+                "texto": "CLIQUE AQUI!"
+            },
+            "btn-8e03f96e": {
+                "texto": "CLIQUE AQUI!"
+            },
+            "btn-9d2b7618": {
+                "texto": "SOLICITAR"
+            },
+            "btn-a7673df9": {
+                "texto": "SAIBA MAIS"
+            },
+            "btn-a9a5b353": {
+                "texto": "CLIQUE AQUI!"
+            },
+            "btn-b2826c44": {
+                "texto": "SAIBA MAIS"
+            },
+            "btn-c247505a": {
+                "texto": "CLIQUE AQUI!"
+            },
+            "btn-d10eda9d": {
+                "texto": "SAIBA MAIS"
+            },
+            "lbl-0151178e": {
+                "texto": "Passagem Neutra"
+            },
+            "lbl-181056cf": {
+                "texto": "Calcule suas emissões de CO<sub>2</sub>"
+            },
+            "lbl-1d4efc26": {
+                "texto": "Passagem Neutra"
+            },
+            "lbl-23442b7c": {
+                "texto": "Frete Neutro"
+            },
+            "lbl-31ec346e": {
+                "texto": "Exigências para obtenção dos Selos"
+            },
+            "lbl-4cbbac86": {
+                "texto": "Principais selos de neutralização de carbono"
+            },
+            "lbl-6c35d24c": {
+                "texto": "Frete Neutro"
+            },
+            "lbl-806cb6b6": {
+                "texto": "Evento Neutro"
+            },
+            "lbl-9f0907f4": {
+                "texto": "Marketplace"
+            },
+            "lbl-b2a0c3f8": {
+                "texto": "CO<sub>2</sub> Neutro"
+            },
+            "lbl-b902f383": {
+                "texto": "Selos de neutralização de carbono"
+            },
+            "lbl-df18412e": {
+                "texto": "Sou Resíduo Zero"
+            },
+            "lbl-f52d6429": {
+                "texto": "Solicitar selo de neutralização de carbono"
+            },
+            "txt-11b336b3": {
+                "texto": "Eventos, eventos corporativos, show, feiras, festas e congresso"
+            },
+            "txt-2e3ba103": {
+                "texto": "Levantar os dados referente às emissões de CO<sub>2</sub>, conforme metodologia GHG Protocol"
+            },
+            "txt-30a4fe49": {
+                "texto": "Certifique o processo de neutralização de carbono da sua empresa e consiga os selos socioambientais"
+            },
+            "txt-358daacc": {
+                "texto": "Em 2008, com o apoio do Ministério da Ciência & Tecnologia, USP e diversas empresas, a Eccaplan desenvolveu os programas de ação e educação contra as mudanças climáticas, Programas CO<sub>2</sub> Neutro, Evento Neutro e mais recentemente o Frete Neutro. Estes programas consiste em avaliar, quantificar e compensar o impacto ambiental de empresas, produtos, serviços, eventos e logística de empresas e e-commerces. Os Selos podem ser aplicados em materiais de comunicação, contratos, website, mídias sociais e apresentações, desde que associados a compensação de carbono realizada."
+            },
+            "txt-3695154d": {
+                "texto": "Empresas, produtos, serviços e projetos"
+            },
+            "txt-5113d1b8": {
+                "texto": "Eccaplan emite: o Selo, Certificado, Relatório Simplificado das Emissões de CO<sub>2</sub> por item e publicação da ação realizada na plataforma Carbon Fair, área de Clientes e Registro."
+            },
+            "txt-5c5e7cde": {
+                "texto": "Selecionar os projetos e comprar os créditos de carbono, na mesma proporção do impacto ambiental a ser compensado. 1 crédito de carbono e equivale a compensação de 1.000 kg de CO<sub>2</sub>. Os créditos de carbono podem ser adquiridos na plataforma Carbon Fair ou diretamente com a Eccaplan"
+            },
+            "txt-82fc7264": {
+                "texto": "Realizar o cálculo das emissões de CO<sub>2</sub>. O cálculo pode ser realizado pela própria empresa ou empresa especializada, como a Eccaplan"
+            },
+            "txt-9fa2b139": {
+                "texto": "Avaliar ações de redução de emissões de CO<sub>2</sub> e outros impactos ambientais"
+            },
+            "txt-a567fbd2": {
+                "texto": "Enviar os dados para verificação da Eccaplan"
+            },
+            "txt-a8f4ba43": {
+                "texto": "Logística de empresas, delivery e entregas de e-commerce"
+            },
+            "txt-d2ee1139": {
+                "texto": "Passagem de ônibus, avião, trem, etc."
+            },
+            "txt-dc3f6766": {
+                "texto": "O custo da Certificação está associado ao tempo para a realização do cálculo das emissões de CO<sub>2</sub> e compra dos créditos de carbono."
+            }
+        }
+    },
+    {
+        "lang": "es",
+        "id": "selos-de-neutralizacao",
+        "folder_1": "sellos-de-neutralizacion",
+        "text": {
+            "btn-49679470": {
+                "texto": "¡CLIC AQUÍ!"
+            },
+            "btn-60e0a792": {
+                "texto": "MÁS INFORMACIÓN"
+            },
+            "btn-63277bd4": {
+                "texto": "¡CLIC AQUÍ!"
+            },
+            "btn-8e03f96e": {
+                "texto": "¡CLIC AQUÍ!"
+            },
+            "btn-9d2b7618": {
+                "texto": "SOLICITAR"
+            },
+            "btn-a7673df9": {
+                "texto": "MÁS INFORMACIÓN"
+            },
+            "btn-a9a5b353": {
+                "texto": "¡CLIC AQUÍ!"
+            },
+            "btn-b2826c44": {
+                "texto": "MÁS INFORMACIÓN"
+            },
+            "btn-c247505a": {
+                "texto": "¡CLIC AQUÍ!"
+            },
+            "btn-d10eda9d": {
+                "texto": "MÁS INFORMACIÓN"
+            },
+            "lbl-0151178e": {
+                "texto": "Pasaje Neutra"
+            },
+            "lbl-181056cf": {
+                "texto": "Calcula tus emisiones de CO<sub>2</sub>"
+            },
+            "lbl-1d4efc26": {
+                "texto": "Pasaje Neutro"
+            },
+            "lbl-23442b7c": {
+                "texto": "Envío Neutro"
+            },
+            "lbl-31ec346e": {
+                "texto": "Exigencias para obtener los sellos"
+            },
+            "lbl-4cbbac86": {
+                "texto": "Principales sellos de neutralización de carbono"
+            },
+            "lbl-6c35d24c": {
+                "texto": "Envío Neutro"
+            },
+            "lbl-806cb6b6": {
+                "texto": "Evento Neutro"
+            },
+            "lbl-9f0907f4": {
+                "texto": "Marketplace"
+            },
+            "lbl-b2a0c3f8": {
+                "texto": "CO<sub>2</sub> Neutro"
+            },
+            "lbl-b902f383": {
+                "texto": "Sellos de neutralización de carbono"
+            },
+            "lbl-df18412e": {
+                "texto": "Soy Residuo Cero"
+            },
+            "lbl-f52d6429": {
+                "texto": "Solicitar sello de neutralización de carbono"
+            },
+            "txt-11b336b3": {
+                "texto": "Eventos, eventos corporativos, espectáculos, ferias, fiestas y congresos"
+            },
+            "txt-2e3ba103": {
+                "texto": "Recopilar datos sobre las emisiones de CO<sub>2</sub>, según la metodología GHG Protocol"
+            },
+            "txt-30a4fe49": {
+                "texto": "Certifica el proceso de neutralización de carbono de tu empresa y obtén los sellos socioambientales"
+            },
+            "txt-358daacc": {
+                "texto": "En 2008, con el apoyo del Ministerio de Ciencia y Tecnología, USP y diversas empresas, Eccaplan desarrolló los programas de acción y educación contra el cambio climático, Programas CO<sub>2</sub> Neutro, Evento Neutro y más recientemente el Envío Neutro. Estos programas consisten en evaluar, cuantificar y compensar el impacto ambiental de empresas, productos, servicios, eventos y logística de empresas y comercios electrónicos. Los sellos pueden aplicarse en materiales de comunicación, contratos, sitio web, redes sociales y presentaciones, siempre que estén asociados a la compensación de carbono realizada."
+            },
+            "txt-3695154d": {
+                "texto": "Empresas, productos, servicios y proyectos"
+            },
+            "txt-5113d1b8": {
+                "texto": "Eccaplan emite: el sello, certificado, informe simplificado de emisiones de CO<sub>2</sub> por ítem y publicación de la acción realizada en la plataforma Carbon Fair, área de clientes y registro."
+            },
+            "txt-5c5e7cde": {
+                "texto": "Seleccionar proyectos y comprar créditos de carbono, en la misma proporción del impacto ambiental a compensar. 1 crédito de carbono equivale a la compensación de 1,000 kg de CO<sub>2</sub>. Los créditos de carbono pueden adquirirse en la plataforma Carbon Fair o directamente con Eccaplan"
+            },
+            "txt-82fc7264": {
+                "texto": "Realizar el cálculo de las emisiones de CO<sub>2</sub>. El cálculo puede ser realizado por la propia empresa o una empresa especializada, como Eccaplan"
+            },
+            "txt-9fa2b139": {
+                "texto": "Evaluar acciones de reducción de emisiones de CO<sub>2</sub> y otros impactos ambientales"
+            },
+            "txt-a567fbd2": {
+                "texto": "Enviar los datos para la verificación de Eccaplan"
+            },
+            "txt-a8f4ba43": {
+                "texto": "Logística de empresas, delivery y entregas de comercio electrónico"
+            },
+            "txt-d2ee1139": {
+                "texto": "Pasaje de autobús, avión, tren, etc."
+            },
+            "txt-dc3f6766": {
+                "texto": "El costo de la certificación está asociado al tiempo para realizar el cálculo de las emisiones de CO<sub>2</sub> y la compra de créditos de carbono."
+            }
+        }
+    },
+    {
+        "lang": "en",
+        "id": "selos-de-neutralizacao",
+        "folder_1": "carbon-neutral-seals",
+        "text": {
+            "btn-49679470": {
+                "texto": "CLICK HERE!"
+            },
+            "btn-60e0a792": {
+                "texto": "LEARN MORE"
+            },
+            "btn-63277bd4": {
+                "texto": "CLICK HERE!"
+            },
+            "btn-8e03f96e": {
+                "texto": "CLICK HERE!"
+            },
+            "btn-9d2b7618": {
+                "texto": "REQUEST"
+            },
+            "btn-a7673df9": {
+                "texto": "LEARN MORE"
+            },
+            "btn-a9a5b353": {
+                "texto": "CLICK HERE!"
+            },
+            "btn-b2826c44": {
+                "texto": "LEARN MORE"
+            },
+            "btn-c247505a": {
+                "texto": "CLICK HERE!"
+            },
+            "btn-d10eda9d": {
+                "texto": "LEARN MORE"
+            },
+            "lbl-0151178e": {
+                "texto": "Neutral Passage"
+            },
+            "lbl-181056cf": {
+                "texto": "Calculate your CO<sub>2</sub> emissions"
+            },
+            "lbl-1d4efc26": {
+                "texto": "Neutral Passage"
+            },
+            "lbl-23442b7c": {
+                "texto": "Neutral Freight"
+            },
+            "lbl-31ec346e": {
+                "texto": "Requirements for obtaining the Seals"
+            },
+            "lbl-4cbbac86": {
+                "texto": "Main carbon neutral seals"
+            },
+            "lbl-6c35d24c": {
+                "texto": "Neutral Freight"
+            },
+            "lbl-806cb6b6": {
+                "texto": "Neutral Event"
+            },
+            "lbl-9f0907f4": {
+                "texto": "Marketplace"
+            },
+            "lbl-b2a0c3f8": {
+                "texto": "CO<sub>2</sub> Neutral"
+            },
+            "lbl-b902f383": {
+                "texto": "Carbon neutral seals"
+            },
+            "lbl-df18412e": {
+                "texto": "I am Zero Waste"
+            },
+            "lbl-f52d6429": {
+                "texto": "Request carbon neutral seal"
+            },
+            "txt-11b336b3": {
+                "texto": "Events, corporate events, shows, fairs, parties, and conferences"
+            },
+            "txt-2e3ba103": {
+                "texto": "Collect data on CO<sub>2</sub> emissions, according to the GHG Protocol methodology"
+            },
+            "txt-30a4fe49": {
+                "texto": "Certify your company's carbon offset process and get environmental seals"
+            },
+            "txt-358daacc": {
+                "texto": "In 2008, with the support of the Ministry of Science & Technology, USP, and several companies, Eccaplan developed action and education programs against climate change, CO<sub>2</sub> Neutral Programs, Neutral Event, and more recently Neutral Freight. These programs consist of evaluating, quantifying, and offsetting the environmental impact of companies, products, services, events, and companies' logistics and e-commerce. Seals can be applied to communication materials, contracts, websites, social media, and presentations, as long as they are associated with carbon offsetting."
+            },
+            "txt-3695154d": {
+                "texto": "Companies, products, services, and projects"
+            },
+            "txt-5113d1b8": {
+                "texto": "Eccaplan issues: the Seal, Certificate, Simplified CO<sub>2</sub> Emissions Report per item, and publication of the action taken on the Carbon Fair platform, Clients area, and Registry."
+            },
+            "txt-5c5e7cde": {
+                "texto": "Select projects and buy carbon credits, in the same proportion as the environmental impact to be offset. 1 carbon credit is equivalent to offsetting 1,000 kg of CO<sub>2</sub>. Carbon credits can be purchased on the Carbon Fair platform or directly from Eccaplan"
+            },
+            "txt-82fc7264": {
+                "texto": "Calculate CO<sub>2</sub> emissions. The calculation can be done by the company itself or by a specialized company, such as Eccaplan"
+            },
+            "txt-9fa2b139": {
+                "texto": "Evaluate CO<sub>2</sub> emission reduction actions and other environmental impacts"
+            },
+            "txt-a567fbd2": {
+                "texto": "Send the data for Eccaplan verification"
+            },
+            "txt-a8f4ba43": {
+                "texto": "Companies' logistics, delivery, and e-commerce deliveries"
+            },
+            "txt-d2ee1139": {
+                "texto": "Bus, plane, train, etc. tickets"
+            },
+            "txt-dc3f6766": {
+                "texto": "The Certification cost is associated with the time to calculate CO<sub>2</sub> emissions and purchase carbon credits."
+            }
+        }
+    }
+]
