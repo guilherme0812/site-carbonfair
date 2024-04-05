@@ -150,7 +150,7 @@ const Navbar = ({
                 </IconButton>
               </Box>
               <Box>
-                <Link href="/">
+                <Link href={`/${lang}`}>
                   <Image
                     src="/logos/carbon-fair.png"
                     alt="CarbonFair"
