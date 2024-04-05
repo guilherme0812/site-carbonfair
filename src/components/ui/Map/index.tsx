@@ -12,9 +12,6 @@ import data from "./mapa-biomas-org.json";
 
 import { MapContainer, TileLayer, Marker, Popup, Polygon } from "react-leaflet";
 import { LatLngExpression } from "leaflet";
-// import "leaflet/dist/leaflet.css";
-// import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.webpack.css"; // Re-uses images from ~leaflet package
-// import "leaflet-defaulticon-compatibility";
 import Head from "next/head";
 
 export interface IMarker {

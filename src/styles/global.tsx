@@ -260,7 +260,7 @@ export default createGlobalStyle`
 
 export const titleProps = {
   component: "h2",
-  variant: "h4",
+  variant: "h5",
   fontWeight: "bold",
   align: "center",
 };

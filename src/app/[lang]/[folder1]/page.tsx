@@ -1,5 +1,3 @@
-import WhoAreWe from "@/components/pages/quem-somos";
-import NaturalizarionSeal from "@/components/pages/selos-de-neutralizacao";
 import { Navbar } from "@/components/patterns";
 import { getFolders } from "@/services/folders";
 import { LangType, getPages } from "@/services/getPages";

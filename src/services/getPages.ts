@@ -27,7 +27,8 @@ export type PageId =
   | "contato"
   | "home"
   | "footer"
-  | "header";
+  | "header"
+  | "projeto";
 
 export const getPages = async (
   folder: string,

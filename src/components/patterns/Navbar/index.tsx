@@ -63,11 +63,18 @@ const Navbar = ({
   ];
 
   const handleChangeLanguage = (lang: string) => {
-    let url = `/${lang}/`;
+    let url = `/${lang}`;
     const page = pages.find((p) => p.lang == lang);
 
-    if (page && page.folder_1) {
-      url += page.folder_1;
+    if (page) {
+      const { folder_1, folder_2, folder_3 } = page;
+      const folders = [folder_1, folder_2, folder_3];
+
+      folders.map((item) => {
+        if (item) {
+          url += `/${item}`;
+        }
+      });
     }
     router.push(url);
   };

@@ -5,14 +5,24 @@ import { Grid, Typography } from "@mui/material";
 import { titleProps } from "../../../styles/global";
 import { ICBProject } from "@/hooks/useApiProjects";
 import { DataSection } from "@/components/ui";
+import { I18nTexts } from "@/types";
+import { useI18n } from "@/hooks/useI18n";
 
-const ProjectData = (project: ICBProject) => {
+const ProjectData = ({
+  project,
+  texts,
+}: {
+  project: ICBProject;
+  texts: I18nTexts;
+}) => {
+  const { t } = useI18n(texts);
+
   return (
     <DataSection className="container">
       <Grid container spacing={2} justifyContent="center">
         <Grid item xs={12}>
           <Typography {...(titleProps as any)} sx={{ mb: 2 }}>
-            Indicadores deste projeto
+            {t("lbl-9888ef40")}
           </Typography>
         </Grid>
 
@@ -23,9 +33,10 @@ const ProjectData = (project: ICBProject) => {
                 Number(project.num_kg_co2)
               )}
             </div>
-            <div className="label">
-              ton de CO<sub>2eq</sub>
-            </div>
+            <p
+              className="whitespace-pre-line text-gray-600"
+              dangerouslySetInnerHTML={{ __html: t("txt-56a2341a") }}
+            />
           </Grid>
         )}
 
@@ -36,7 +47,10 @@ const ProjectData = (project: ICBProject) => {
                 Number(project.num_arvores_plantadas)
               )}
             </div>
-            <div className="label">Árvores</div>
+            <p
+              className="whitespace-pre-line text-gray-600"
+              dangerouslySetInnerHTML={{ __html: t("txt-3a1fba8c") }}
+            />
           </Grid>
         )}
 
@@ -47,7 +61,10 @@ const ProjectData = (project: ICBProject) => {
                 Number(project.num_pessoas_beneficiadas)
               )}
             </div>
-            <div className="label">Pessoas beneficiadas</div>
+            <p
+              className="whitespace-pre-line text-gray-600"
+              dangerouslySetInnerHTML={{ __html: t("txt-bc99bd8c") }}
+            />
           </Grid>
         )}
       </Grid>
