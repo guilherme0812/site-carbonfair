@@ -77,7 +77,6 @@ const ProjectPage = async ({
   return (
     <div>
       <Header {...project} />
-
       <div className="container">
         <Grid container>
           <Grid container spacing={2}>
