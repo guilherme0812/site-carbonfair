@@ -36,7 +36,7 @@ const ProjectPage = async ({
   folder2: string;
 }) => {
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_CARBON_FAIR_API_URL}/carbonfair-publico/projetos`,
+    `${process.env.NEXT_PUBLIC_CARBON_FAIR_API_URL}/carbonfair-publico/projeto?projeto=${folder2}`,
     {
       headers: { Authorization: "abc" },
       cache: "no-store",
