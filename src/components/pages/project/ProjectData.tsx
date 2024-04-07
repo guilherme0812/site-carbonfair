@@ -26,7 +26,7 @@ const ProjectData = ({
           </Typography>
         </Grid>
 
-        {project.num_kg_co2 && (
+        {project?.num_kg_co2 && (
           <Grid item xs={12} md={4}>
             <div className="value">
               {new Intl.NumberFormat("pt-BR").format(
@@ -40,7 +40,7 @@ const ProjectData = ({
           </Grid>
         )}
 
-        {project.num_arvores_plantadas && (
+        {project?.num_arvores_plantadas && (
           <Grid item xs={12} md={4}>
             <div className="value">
               {new Intl.NumberFormat("pt-BR").format(
@@ -54,7 +54,7 @@ const ProjectData = ({
           </Grid>
         )}
 
-        {project.num_pessoas_beneficiadas && (
+        {project?.num_pessoas_beneficiadas && (
           <Grid item xs={12} md={4}>
             <div className="value">
               {new Intl.NumberFormat("pt-BR").format(

@@ -45,9 +45,7 @@ const ProjectPage = async ({
 
   const projectsReq: ICBProject[] = await res.json();
 
-  const project = projectsReq.find(
-    (project) => project.des_url_prefix == folder2
-  ) as unknown as ICBProject;
+  const project = projectsReq[0] as unknown as ICBProject;
 
   const { t } = useI18n(texts);
 
