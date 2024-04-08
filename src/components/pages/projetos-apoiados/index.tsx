@@ -49,7 +49,9 @@ const Container = styled.div`
 const SupportProjectsPage = ({
   texts,
   lang,
+  extraLinks,
 }: {
+  extraLinks: I18nTexts;
   texts: I18nTexts;
   lang: LangType;
 }) => {
@@ -101,7 +103,11 @@ const SupportProjectsPage = ({
 
         <HowCanIKnow texts={texts} />
 
-        <SearchProjectSection texts={texts} />
+        <SearchProjectSection
+          texts={texts}
+          extraLinks={extraLinks}
+          lang={lang}
+        />
       </main>
 
       {/* <NewLetter /> */}

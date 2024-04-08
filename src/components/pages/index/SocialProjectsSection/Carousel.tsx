@@ -23,17 +23,22 @@ import {
 } from "swiper";
 import { ICBProject } from "../../../../hooks/useApiProjects";
 import { ProjectCard } from "../../../patterns";
+import { LangType } from "@/services/getPages";
+import { I18nTexts } from "@/types";
 
 interface CarouselProps {
   options: ICBProject[];
+  lang: LangType;
+  extraLinks: I18nTexts;
 }
+
 const Container = styled.div`
   .carousel-container {
     position: relative;
   }
 `;
 
-const Carousel = ({ options }: CarouselProps) => {
+const Carousel = ({ options, lang, extraLinks }: CarouselProps) => {
   const [swiper, setSwiper] = React.useState<any>();
 
   // eslint-disable-next-line
@@ -81,7 +86,12 @@ const Carousel = ({ options }: CarouselProps) => {
         >
           {options.map((item, index) => (
             <SwiperSlide key={index}>
-              <ProjectCard {...item} shadow={false} />
+              <ProjectCard
+                {...item}
+                shadow={false}
+                lang={lang}
+                extraLinks={extraLinks}
+              />
             </SwiperSlide>
           ))}
         </Swiper>

@@ -5,6 +5,10 @@ import styled, { css } from "styled-components";
 import { Box, Typography } from "@mui/material";
 import { Button } from "../../../../components/ui";
 import { ICBClient } from "../../../../hooks/useApiClients";
+import { LangType } from "@/services/getPages";
+import Link from "next/link";
+import { I18nTexts } from "@/types";
+import { useI18n } from "@/hooks/useI18n";
 
 interface ContainerProps {
   active: boolean;
@@ -12,6 +16,8 @@ interface ContainerProps {
 
 interface CardProps extends ICBClient {
   active: boolean;
+  lang: LangType;
+  extraLinks: I18nTexts;
 }
 
 const Container = styled.div<ContainerProps>`
@@ -46,7 +52,11 @@ const Card = ({
   des_logo,
   des_identificador,
   txt_descricao,
+  lang,
+  extraLinks,
 }: CardProps) => {
+  const { t } = useI18n(extraLinks);
+
   return (
     <Container active={active}>
       <Typography sx={{ fontWeight: "bold", color: "GrayText" }}>
@@ -63,11 +73,11 @@ const Card = ({
       </Box>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <Box sx={{ width: "50%" }}>
-          <a href={"/cliente/" + des_identificador}>
+          <Link href={`/${lang}/${t("lnk-dbc32485")}/${des_identificador}`}>
             <Button variant="contained" fullWidth>
               Conheça
             </Button>
-          </a>
+          </Link>
         </Box>
       </Box>
     </Container>

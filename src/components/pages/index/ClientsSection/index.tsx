@@ -28,6 +28,7 @@ import SimpleSearch, {
 } from "../../../../components/ui/SimpleSearch";
 import { I18nTexts } from "@/types";
 import { useI18n } from "@/hooks/useI18n";
+import { LangType } from "@/services/getPages";
 
 const Container = styled.section`
   background-color: ${(props) => props.theme.palette.grey[100]};
@@ -70,7 +71,15 @@ const Container = styled.section`
     }
   }
 `;
-const ClientsSection = ({ texts }: { texts: I18nTexts }) => {
+const ClientsSection = ({
+  texts,
+  lang,
+  extraLinks,
+}: {
+  extraLinks: I18nTexts;
+  texts: I18nTexts;
+  lang: LangType;
+}) => {
   const [allClients, setAllClients] = React.useState<ICBClient[]>([]);
   const [options, setOption] = React.useState<OptionProps[]>([]);
   const { t } = useI18n(texts);
@@ -164,7 +173,12 @@ const ClientsSection = ({ texts }: { texts: I18nTexts }) => {
             {allClients.map((item, index) => {
               return (
                 <SwiperSlide key={index}>
-                  <Card active={swiperIndex === index} {...item} />
+                  <Card
+                    active={swiperIndex === index}
+                    {...item}
+                    lang={lang}
+                    extraLinks={extraLinks}
+                  />
                 </SwiperSlide>
               );
             })}

@@ -11,6 +11,7 @@ import MapSection from "./MapSection";
 import { IoMapOutline } from "react-icons/io5";
 import { useI18n } from "@/hooks/useI18n";
 import { I18nTexts } from "@/types";
+import { LangType } from "@/services/getPages";
 
 const Container = styled.section`
   .carrousel-container {
@@ -39,7 +40,15 @@ const Container = styled.section`
   }
 `;
 
-const SocialProjectsSection = ({ texts }: { texts: I18nTexts }) => {
+const SocialProjectsSection = ({
+  texts,
+  lang,
+  extraLinks,
+}: {
+  texts: I18nTexts;
+  extraLinks: I18nTexts;
+  lang: LangType;
+}) => {
   const { t } = useI18n(texts);
   const { projects, projectsIsLoading } = useApiCBProjects();
 
@@ -93,7 +102,11 @@ const SocialProjectsSection = ({ texts }: { texts: I18nTexts }) => {
             {!projectsIsLoading ? (
               <>
                 <Box>
-                  <Carousel options={projectsData} />
+                  <Carousel
+                    options={projectsData}
+                    lang={lang}
+                    extraLinks={extraLinks}
+                  />
                 </Box>
               </>
             ) : (

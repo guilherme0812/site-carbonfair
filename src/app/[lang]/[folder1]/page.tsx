@@ -35,6 +35,11 @@ export default async function Page({
   const navbarPages = await getPages(NAVBAR);
   const navbarText = navbarPages.find((page) => page.lang == lang)
     ?.text as unknown as I18nTexts;
+
+  // links extras
+  const extraLinksPages = await getPages("links_extras");
+  const extraLinks = extraLinksPages.find((i) => i.lang == params.lang)?.text;
+
   const languages = await getLanguages();
 
   if (!data) {
@@ -50,7 +55,12 @@ export default async function Page({
         texts={navbarText}
       />
 
-      <PageContent id={data.id} texts={data.text} lang={lang} />
+      <PageContent
+        id={data.id}
+        texts={data.text}
+        lang={lang}
+        extraLinks={extraLinks as unknown as I18nTexts}
+      />
     </div>
   );
 }

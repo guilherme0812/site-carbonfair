@@ -44,6 +44,9 @@ async function Page({ params }: { params: { lang: string } }) {
 
   const texts = pageData?.text;
 
+  const extraLinksPages = await getPages("links_extras");
+  const extraLinks = extraLinksPages.find((i) => i.lang == params.lang)?.text;
+
   return (
     <>
       <Navbar
@@ -62,9 +65,17 @@ async function Page({ params }: { params: { lang: string } }) {
 
         <SolutionsSection texts={texts as unknown as I18nTexts} />
 
-        <SocialProjectsSection texts={texts as unknown as I18nTexts} />
+        <SocialProjectsSection
+          texts={texts as unknown as I18nTexts}
+          extraLinks={extraLinks as unknown as I18nTexts}
+          lang={params.lang as unknown as LangType}
+        />
 
-        <ClientsSection texts={texts as unknown as I18nTexts} />
+        <ClientsSection
+          texts={texts as unknown as I18nTexts}
+          lang={params.lang as unknown as LangType}
+          extraLinks={extraLinks as unknown as I18nTexts}
+        />
 
         <OurPartners texts={texts as unknown as I18nTexts} />
 

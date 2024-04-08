@@ -8,9 +8,15 @@ import { ICBProject } from "../../../hooks/useApiProjects";
 import { IoPinOutline, IoEarthOutline, IoLeafOutline } from "react-icons/io5";
 import { BsTree } from "react-icons/bs";
 import { TbPlant } from "react-icons/tb";
+import { LangType } from "@/services/getPages";
+import Link from "next/link";
+import { I18nTexts } from "@/types";
+import { useI18n } from "@/hooks/useI18n";
 
 interface CardProps extends ICBProject {
   shadow?: boolean;
+  lang: LangType;
+  extraLinks: I18nTexts;
 }
 
 interface ContainerProps {
@@ -57,7 +63,9 @@ const Container = styled.div<ContainerProps>`
   }
 `;
 
-const ProjectCard = (project: CardProps) => {
+const ProjectCard = ({ lang, extraLinks, ...project }: CardProps) => {
+  const { t } = useI18n(extraLinks);
+
   const typographyProps = {
     component: "p",
     variant: "body2",
@@ -137,11 +145,11 @@ const ProjectCard = (project: CardProps) => {
       </Box>
 
       <Box className="button-container">
-        <a href={`/projeto/${project.des_url_prefix}`}>
+        <Link href={`/${lang}/${t("lnk-5e8299f8")}/${project.des_url_prefix}`}>
           <Button fullWidth variant="contained">
             Conheça!
           </Button>
-        </a>
+        </Link>
       </Box>
     </Container>
   );

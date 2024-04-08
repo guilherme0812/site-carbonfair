@@ -17,6 +17,7 @@ import { ProjectCard } from "../../../patterns";
 import { useApiOds } from "../../../../hooks/useApiOds";
 import { I18nTexts } from "@/types";
 import { useI18n } from "@/hooks/useI18n";
+import { LangType } from "@/services/getPages";
 
 const Container = styled.section`
   .filter-container {
@@ -198,7 +199,15 @@ const notFoundProject = (
   </Box>
 );
 
-const SearchProjectSection = ({ texts }: { texts: I18nTexts }) => {
+const SearchProjectSection = ({
+  texts,
+  extraLinks,
+  lang,
+}: {
+  lang: LangType;
+  texts: I18nTexts;
+  extraLinks: I18nTexts;
+}) => {
   const { t } = useI18n(texts);
 
   const { projects } = useApiCBProjects();
@@ -369,7 +378,12 @@ const SearchProjectSection = ({ texts }: { texts: I18nTexts }) => {
           <ProjectSwiper>
             {filteredProjects.slice(0, 10).map((item, index) => (
               <SwiperSlide key={index}>
-                <ProjectCard {...item} shadow />
+                <ProjectCard
+                  {...item}
+                  shadow
+                  extraLinks={extraLinks}
+                  lang={lang}
+                />
               </SwiperSlide>
             ))}
           </ProjectSwiper>
@@ -381,7 +395,12 @@ const SearchProjectSection = ({ texts }: { texts: I18nTexts }) => {
           <ProjectSwiper>
             {filteredProjects.slice(10, 20).map((item, index) => (
               <SwiperSlide key={index}>
-                <ProjectCard {...item} shadow />
+                <ProjectCard
+                  {...item}
+                  shadow
+                  extraLinks={extraLinks}
+                  lang={lang}
+                />
               </SwiperSlide>
             ))}
           </ProjectSwiper>
@@ -391,7 +410,12 @@ const SearchProjectSection = ({ texts }: { texts: I18nTexts }) => {
           <ProjectSwiper>
             {filteredProjects.slice(20, projects.length).map((item, index) => (
               <SwiperSlide key={index}>
-                <ProjectCard {...item} shadow />
+                <ProjectCard
+                  {...item}
+                  shadow
+                  extraLinks={extraLinks}
+                  lang={lang}
+                />
               </SwiperSlide>
             ))}
           </ProjectSwiper>

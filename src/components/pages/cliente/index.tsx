@@ -27,7 +27,6 @@ const ClientPage = async ({
   lang: LangType;
   folder2: string;
 }) => {
-  const data = getTest() as unknown as string;
   // const request = await apiCarbonFair.get(
   //   `carbonfair-publico/cliente_eventos?identificador_cliente=${params.slug}`
   // );
@@ -52,14 +51,22 @@ const ClientPage = async ({
   //   link: "/projeto/" + project.des_url_prefix,
   // }));
 
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_CARBON_FAIR_API_URL}/carbonfair-publico/cliente?cliente=${folder2}`,
+    {
+      headers: { Authorization: "abc" },
+      next: { revalidate: 60 },
+    }
+  );
+  const clientReq: ICBClient[] = await res.json();
+
+  const client = clientReq[0] as unknown as ICBClient;
+
   return (
     <div>
-      <div className="mt-20">
-        {folder2} - {data}
-      </div>
-      {/* <Header {...client} /> */}
+      <Header {...client} />
 
-      {/* <Box className="container" sx={{ pb: 0 }}>
+      <Box className="container" sx={{ pb: 0 }}>
         <Box
           sx={{
             display: "flex",
@@ -135,7 +142,7 @@ const ClientPage = async ({
         <Typography component="p">{client?.txt_descricao}</Typography>
       </Box>
 
-      <Map markers={[...projectsMarkers]} />
+      {/*<Map markers={[...projectsMarkers]} />
 
       <Box className="container" sx={{ pb: 0 }}>
         <Typography

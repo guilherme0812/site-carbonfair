@@ -17,9 +17,11 @@ function PageContent({
   id,
   texts,
   lang,
+  extraLinks,
 }: {
   id: PageId;
   texts: I18nTexts;
+  extraLinks: I18nTexts;
   lang: LangType;
 }) {
   return (
@@ -41,7 +43,11 @@ function PageContent({
       ) : id == "por-que-participar" ? (
         <WhyParticipatePage texts={texts} lang={lang} />
       ) : id == "projetos-apoiados" ? (
-        <SupportProjectsPage texts={texts} lang={lang} />
+        <SupportProjectsPage
+          texts={texts}
+          lang={lang}
+          extraLinks={extraLinks}
+        />
       ) : id == "quem-somos" ? (
         <WhoWeArePage texts={texts} lang={lang} />
       ) : id == "registro" ? (
