@@ -18,8 +18,6 @@ function PageContent({
     <>
       {id == "projeto" ? (
         <ProjectPage folder2={folder2} texts={texts} lang={lang} />
-      ) : id == "cliente" ? (
-        <ClientPage folder2={folder2} texts={texts} lang={lang} />
       ) : (
         <div className="mt-20">Página {id} não encontrada</div>
       )}
