@@ -12,6 +12,8 @@ import ProjectData from "./ProjectData";
 import ProjectDetails from "./ProjectDetails";
 import ProjectDocuments from "./ProjectDocuments";
 
+export const revalidate = 0;
+
 const labelStyle = {
   align: "center",
 };
@@ -72,6 +74,8 @@ const ProjectPage = async ({
       des_url: doc.des_url,
       num_ordem: doc.num_ordem,
     }));
+  } else {
+    return <div>Erro ao renderizar cliente</div>;
   }
 
   return (
