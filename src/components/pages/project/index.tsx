@@ -12,8 +12,6 @@ import ProjectData from "./ProjectData";
 import ProjectDetails from "./ProjectDetails";
 import ProjectDocuments from "./ProjectDocuments";
 
-export const revalidate = 0;
-
 const labelStyle = {
   align: "center",
 };
@@ -41,7 +39,8 @@ const ProjectPage = async ({
     `${process.env.NEXT_PUBLIC_CARBON_FAIR_API_URL}/carbonfair-publico/projeto?projeto=${folder2}`,
     {
       headers: { Authorization: "abc" },
-      cache: "no-store",
+      // cache: "no-store",
+      next: { revalidate: 60 },
     }
   );
 

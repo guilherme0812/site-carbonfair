@@ -26,10 +26,10 @@ export default async function Page({
 }: {
   params: { lang: LangType; folder1: string; folder2: string };
 }) {
-  const { lang, folder1 } = params;
+  const { lang, folder1, folder2 } = params;
 
   //pages
-  const pagesData = await getPages(folder1);
+  const pagesData = await getPages(folder2);
   const data = pagesData.find((p) => p.lang == lang);
 
   //navbar requests
@@ -41,7 +41,6 @@ export default async function Page({
   if (!data) {
     return <div>Erro ao encontrar dado da página</div>;
   }
-
   return (
     <div>
       <Navbar
@@ -50,6 +49,10 @@ export default async function Page({
         languages={languages}
         texts={navbarText}
       />
+
+      {/* <div className="mt-20">
+        {data.id == "projeto" && <div>é um projeto {data.folder_2}</div>}
+      </div> */}
 
       <PageContent
         id={data.id}
