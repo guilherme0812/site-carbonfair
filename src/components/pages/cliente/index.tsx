@@ -76,40 +76,42 @@ const ClientPage = async ({
       next: { revalidate: 60 },
     }
   );
+
   const client: ICBClientEvent = await clientEventRes.json();
 
-  let foundProjectIds: number[] = [];
+  // let foundProjectIds: number[] = [];
 
-  client.eventos.filter((item) => {
-    if (foundProjectIds.includes(item.id_projeto)) {
-      return false;
-    } else {
-      foundProjectIds.push(item.id_projeto);
-      return true;
-    }
-  });
+  // client.eventos.filter((item) => {
+  //   if (foundProjectIds.includes(item.id_projeto)) {
+  //     return false;
+  //   } else {
+  //     foundProjectIds.push(item.id_projeto);
+  //     return true;
+  //   }
+  // });
 
-  let markers: IMarker[] = [];
+  // let markers: IMarker[] = [];
 
-  for (const id of foundProjectIds) {
-    let projectReq: ICBProject[] = await getProject(id);
-    let project = projectReq[0];
+  // for (const id of foundProjectIds) {
+  //   let projectReq: ICBProject[] = await getProject(id);
+  //   let project = projectReq[0];
 
-    markers.push({
-      biome: project.des_bioma,
-      kg: Number(project.num_kg_co2),
-      latY: Number(project.des_latitude),
-      lonX: Number(project.des_longitude),
-      local: project.des_cidade,
-      name: project.des_projeto,
-      projectDefault: project.des_padrao,
-      type: project.des_tipo_projeto,
-      link: `/${lang}/${links("lnk-5e8299f8")}/${project.des_url_prefix}`,
-    });
-  }
+  //   markers.push({
+  //     biome: project.des_bioma,
+  //     kg: Number(project.num_kg_co2),
+  //     latY: Number(project.des_latitude),
+  //     lonX: Number(project.des_longitude),
+  //     local: project.des_cidade,
+  //     name: project.des_projeto,
+  //     projectDefault: project.des_padrao,
+  //     type: project.des_tipo_projeto,
+  //     link: `/${lang}/${links("lnk-5e8299f8")}/${project.des_url_prefix}`,
+  //   });
+  // }
 
   return (
     <div>
+      <div className="mt-20">{folder2}</div>
       <Header {...client} />
 
       <Box className="container" sx={{ pb: 0 }}>
@@ -186,7 +188,7 @@ const ClientPage = async ({
         <p className="text-base text-gray-600">{client?.txt_descricao}</p>
       </Box>
 
-      <Map markers={[...markers]} />
+      {/* <Map markers={[...markers]} /> */}
 
       <Box className="container" sx={{ pb: 0 }}>
         <Typography
