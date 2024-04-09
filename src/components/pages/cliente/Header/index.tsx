@@ -2,7 +2,7 @@
 
 import { Box, Typography } from "@mui/material";
 import styled from "styled-components";
-import { ICBClient } from "../../../../hooks/useApiClients";
+import { ICBClientEvent } from "../../../../hooks/useApiClients";
 
 export const Container = styled.div`
   background-image: url("/background/quem-somos.jpg");
@@ -25,7 +25,7 @@ export const Container = styled.div`
   }
 `;
 
-const Header = (client: ICBClient) => {
+const Header = (client: ICBClientEvent) => {
   return (
     <Container>
       <div className="white-linear-gradient-1">

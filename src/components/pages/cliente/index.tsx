@@ -1,55 +1,53 @@
 import Header from "@/components/pages/cliente/Header";
 import { ResponsiveImage } from "@/components/ui";
 import { ICBClient, ICBClientEvent } from "@/hooks/useApiClients";
-import { apiCarbonFair } from "@/services/api";
-import { getClients } from "@/services/clients";
-import { getProjects } from "@/services/projects";
 import { Box, Grid, Typography } from "@mui/material";
 import nextDynamic from "next/dynamic";
-import ClientEventFilter from "@/components/pages/cliente/ClientEventFilter";
 import { I18nTexts } from "@/types";
 import { LangType } from "@/services/getPages";
-import { getTest } from "./getTest";
+import { IMarker } from "@/components/ui/Map";
+import { ICBProject } from "@/hooks/useApiProjects";
+import { useI18n } from "@/hooks/useI18n";
+import ClientEventFilter from "./ClientEventFilter";
+import Image from "next/image";
 
 export const dynamic = "force-dynamic";
 export const dynamicParams = false;
 
-// const Map = nextDynamic(() => import("../../../components/ui/Map"), {
-//   ssr: false,
-// });
+const getProject = async (projectId: number) => {
+  let res = await fetch(
+    `${process.env.NEXT_PUBLIC_CARBON_FAIR_API_URL}/carbonfair-publico/projeto?id_projeto=${projectId}`,
+    {
+      headers: { Authorization: "abc" },
+      cache: "no-store",
+    }
+  );
+
+  if (!res.ok) {
+    // This will activate the closest `error.js` Error Boundary
+    throw new Error("Failed to fetch data");
+  }
+
+  return res.json();
+};
+
+const Map = nextDynamic(() => import("../../../components/ui/Map"), {
+  ssr: false,
+});
 
 const ClientPage = async ({
   texts,
+  extraLinks,
   lang,
   folder2,
 }: {
   texts: I18nTexts;
+  extraLinks: I18nTexts;
   lang: LangType;
   folder2: string;
 }) => {
-  // const request = await apiCarbonFair.get(
-  //   `carbonfair-publico/cliente_eventos?identificador_cliente=${params.slug}`
-  // );
-
-  // const client: ICBClientEvent = request.data;
-  // const projects = await getProjects();
-
-  // const projectIds = client.eventos.map((evt) => evt.id_projeto);
-  // const projectsFiltered = projects.filter((project) =>
-  //   projectIds.includes(project.id)
-  // );
-
-  // const projectsMarkers: IMarker[] = projectsFiltered.map((project) => ({
-  //   biome: project.des_bioma,
-  //   kg: Number(project.num_kg_co2),
-  //   latY: Number(project.des_latitude),
-  //   lonX: Number(project.des_longitude),
-  //   local: project.des_cidade,
-  //   name: project.des_projeto,
-  //   projectDefault: project.des_padrao,
-  //   type: project.des_tipo_projeto,
-  //   link: "/projeto/" + project.des_url_prefix,
-  // }));
+  const { t } = useI18n(texts);
+  const { t: links } = useI18n(extraLinks); // label: project | projeto
 
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_CARBON_FAIR_API_URL}/carbonfair-publico/cliente?cliente=${folder2}`,
@@ -58,24 +56,72 @@ const ClientPage = async ({
       next: { revalidate: 60 },
     }
   );
+
   const clientReq: ICBClient[] = await res.json();
 
-  const client = clientReq[0] as unknown as ICBClient;
+  if (clientReq.length == 0) {
+    return (
+      <div className="my-20">
+        <div className="text-center">Erro ao encontrar cliente</div>
+      </div>
+    );
+  }
+
+  const findClient = clientReq[0] as unknown as ICBClient;
+
+  const clientEventRes = await fetch(
+    `${process.env.NEXT_PUBLIC_CARBON_FAIR_API_URL}/carbonfair-publico/cliente_eventos?id_cliente=${findClient.id}`,
+    {
+      headers: { Authorization: "abc" },
+      next: { revalidate: 60 },
+    }
+  );
+  const client: ICBClientEvent = await clientEventRes.json();
+
+  let foundProjectIds: number[] = [];
+
+  client.eventos.filter((item) => {
+    if (foundProjectIds.includes(item.id_projeto)) {
+      return false;
+    } else {
+      foundProjectIds.push(item.id_projeto);
+      return true;
+    }
+  });
+
+  let markers: IMarker[] = [];
+
+  for (const id of foundProjectIds) {
+    let projectReq: ICBProject[] = await getProject(id);
+    let project = projectReq[0];
+
+    markers.push({
+      biome: project.des_bioma,
+      kg: Number(project.num_kg_co2),
+      latY: Number(project.des_latitude),
+      lonX: Number(project.des_longitude),
+      local: project.des_cidade,
+      name: project.des_projeto,
+      projectDefault: project.des_padrao,
+      type: project.des_tipo_projeto,
+      link: `/${lang}/${links("lnk-5e8299f8")}/${project.des_url_prefix}`,
+    });
+  }
 
   return (
     <div>
       <Header {...client} />
 
       <Box className="container" sx={{ pb: 0 }}>
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            mb: "2rem",
-          }}
-        >
-          <ResponsiveImage src="/icons/produto-natural.png" alt="Indicadores" />
-        </Box>
+        <div className="flex justify-center mb-2">
+          <Image
+            src={"/icons/produto-natural.png"}
+            alt="Indicadores"
+            width={70}
+            height={70}
+            className="block m-auto"
+          />
+        </div>
 
         <Typography
           component="h3"
@@ -84,7 +130,7 @@ const ClientPage = async ({
           align="center"
           sx={{ mb: "2rem" }}
         >
-          Indicadores dessa ação
+          {t("lbl-07470e58")}
         </Typography>
 
         <Grid container spacing={2} justifyContent="center">
@@ -99,9 +145,11 @@ const ClientPage = async ({
                 currency: "BRL",
               }).format(Number(client.num_kg_co2) ?? 0)}
             </Typography>
-            <Typography variant="subtitle1" align="center">
-              kg de CO<sub>2</sub> compensados
-            </Typography>
+
+            <p
+              className="text-center"
+              dangerouslySetInnerHTML={{ __html: t("txt-d0390add") }}
+            />
           </Grid>
 
           <Grid item xs={12} md={6} lg={3}>
@@ -115,9 +163,7 @@ const ClientPage = async ({
                 currency: "BRL",
               }).format(client.num_arvores_plantadas ?? 0)}
             </Typography>
-            <Typography variant="subtitle1" align="center">
-              Número de árvores plantadas
-            </Typography>
+            <p className="text-center">{t("txt-9cb4245f")}</p>
           </Grid>
 
           <Grid item xs={12} md={6} lg={3}>
@@ -131,18 +177,16 @@ const ClientPage = async ({
                 currency: "BRL",
               }).format(client.num_total_apoiadores ?? 0)}
             </Typography>
-            <Typography variant="subtitle1" align="center">
-              Número de apoiadores
-            </Typography>
+            <p className="text-center">{t("txt-4c0712b0")}</p>
           </Grid>
         </Grid>
       </Box>
 
       <Box className="container">
-        <Typography component="p">{client?.txt_descricao}</Typography>
+        <p className="text-base text-gray-600">{client?.txt_descricao}</p>
       </Box>
 
-      {/*<Map markers={[...projectsMarkers]} />
+      <Map markers={[...markers]} />
 
       <Box className="container" sx={{ pb: 0 }}>
         <Typography
@@ -152,10 +196,10 @@ const ClientPage = async ({
           fontWeight="bold"
           textAlign="center"
         >
-          O que são as ações
+          {t("lbl-b15ca687")}
         </Typography>
 
-        <Typography component="p">
+        <p className="text-gray-600 text-base">
           Todo evento e empresa de alguma forma impacta o meio ambiente, seja
           pelo consumo de combustível, energia ou geração de resíduos. As ações
           de redução e compensação de carbono são ações voluntárias e de
@@ -167,7 +211,7 @@ const ClientPage = async ({
           Fair e proporcionados pela Eccaplan e seus parceiros, recebem
           certificado e link de verificação e transparência da ação ambiental
           realizada.
-        </Typography>
+        </p>
       </Box>
 
       <Box className="container">
@@ -177,34 +221,17 @@ const ClientPage = async ({
           align="center"
           fontWeight="bold"
         >
-          Todas as ações desse cliente
+          {t("lbl-0ea9317f")}
         </Typography>
       </Box>
 
       <ClientEventFilter
         url={`${client.des_identificador}`}
         clientId={client.id}
-      /> */}
+      />
     </div>
   );
 };
-
-// export async function generateStaticParams() {
-//   try {
-//     const allclients = await getClients();
-//     const clients = allclients.filter((c) => c.bol_ativo === true);
-
-//     const test = clients.map((client) => ({
-//       slug: client.des_identificador,
-//     }));
-
-//     return clients.map((client) => ({
-//       slug: client.des_identificador,
-//     }));
-//   } catch (error) {
-//     return [];
-//   }
-// }
 
 // export async function generateMetadata({ params }: Props) {
 //   return {

@@ -6,11 +6,13 @@ import { I18nTexts } from "@/types";
 function PageContent({
   id,
   texts,
+  extraLinks,
   lang,
   folder2,
 }: {
   id: PageId;
   texts: I18nTexts;
+  extraLinks: I18nTexts;
   lang: LangType;
   folder2: string;
 }) {
@@ -19,7 +21,7 @@ function PageContent({
       {id == "projeto" ? (
         <ProjectPage folder2={folder2} texts={texts} lang={lang} />
       ) : id == "cliente" ? (
-        <ClientPage folder2={folder2} texts={texts} lang={lang} />
+        <ClientPage folder2={folder2} texts={texts} lang={lang} extraLinks={extraLinks} />
       ) : (
         <div className="mt-20">Página {id} não encontrada</div>
       )}
