@@ -41,7 +41,7 @@ function MapSection({
         name: project.des_projeto,
         projectDefault: project.des_padrao,
         type: project.des_tipo_projeto,
-        link: "/projeto/" + project.des_url_prefix,
+        link: `/${lang}/${links("lnk-5e8299f8")}/${project.des_url_prefix}`,
       }));
 
       setMarkers(projectsMarkers);
