@@ -1,7 +1,7 @@
 "use client";
 
 import { Box, Grid, Typography } from "@mui/material";
-import Header from "./Header";
+// import Header from "./Header";
 import { InputCustomized } from "@/components/pages/registo/InputCustomized";
 import { CustomButton } from "@/components/pages/registo/CustomButton";
 import { DataGrid, Button } from "@/components/ui";
@@ -10,6 +10,11 @@ import React from "react";
 import { GridColDef } from "@mui/x-data-grid";
 import moment from "moment";
 import { useApiPublicCarbonRecords } from "@/hooks/useApiCarbonRecord";
+import { useI18n } from "@/hooks/useI18n";
+import { I18nTexts } from "@/types";
+import { LangType } from "@/services/getPages";
+import { Header } from "@/components/patterns";
+import HeaderDefaultContent from "@/components/patterns/Header/HeaderDefaultContent";
 
 export type ListRegistroPedido = {
   FNEID: number;
@@ -23,7 +28,18 @@ export type ListRegistroPedido = {
 
 const INITIAL_PAGE_SIZE = 10;
 
-function RegisterPage() {
+function RegisterPage({
+  texts,
+  lang,
+  extraLinks,
+}: {
+  texts: I18nTexts;
+  lang: LangType;
+  extraLinks: I18nTexts;
+}) {
+  const { t } = useI18n(texts);
+  const { t: links } = useI18n(extraLinks);
+
   const inputRef = React.useRef<HTMLInputElement>(null);
 
   const [filter, setFilter] = React.useState<string>("");
@@ -45,14 +61,14 @@ function RegisterPage() {
   const columns: GridColDef[] = [
     {
       field: "dta_lancamento",
-      headerName: "Data",
+      headerName: t("lbl-130c18d0"),
       flex: 1,
       maxWidth: 100,
       renderCell: (param) =>
         moment(param.row.dta_lancamento, "YYYY/MM/DD").format("DD/MM/YYYY"),
     },
 
-    { field: "des_beneficial", headerName: "Beneficiário", flex: 1 },
+    { field: "des_beneficial", headerName: t("lbl-3d500ab5"), flex: 1 },
     // {
     //     field: "des_texto_adicional",
     //     headerName: "Texto adicional",
@@ -64,14 +80,14 @@ function RegisterPage() {
     //         </CellCustomized>
     //     ),
     // },
-    { field: "des_projeto", headerName: "Projeto", flex: 1 },
+    { field: "des_projeto", headerName: t("lbl-7f4b7590"), flex: 1 },
     {
       field: "l",
       headerName: "Link",
       minWidth: 160,
       renderCell: (param) => (
         <a
-          href={`/credito-carbono-compensado?id_registro=${param.row.id}`}
+          href={`/${lang}/${links("lnk-dbc32486")}?id_registro=${param.row.id}`}
           target="_blank"
           rel="noreferrer"
           style={{
@@ -79,7 +95,7 @@ function RegisterPage() {
             width: "100%",
           }}
         >
-          <Button variant="contained">Visualizar</Button>
+          <Button variant="contained">{t("btn-0de17d34")}</Button>
         </a>
       ),
     },
@@ -88,7 +104,12 @@ function RegisterPage() {
   const { data } = useApiPublicCarbonRecords(filter);
   return (
     <div>
-      <Header />
+      <Header
+        url="/background/registro.jpg"
+        backgroundStyle={{ backgroundPosition: "center 100%" }}
+      >
+        <HeaderDefaultContent lang={lang} title={t("lbl-d5436a37")} />
+      </Header>
 
       <main id="main">
         <section>
@@ -105,67 +126,12 @@ function RegisterPage() {
                 fontWeight="bold"
                 sx={{ m: "2rem" }}
               >
-                Seja bem vindo ao Registro de Neutralização de Carbono
+                {t("lbl-95dc405f")}
               </Typography>
-              <Typography
-                align="center"
-                component="p"
-                variant="body1"
-                color="GrayText"
-                sx={{ m: "1rem" }}
-              >
-                A primeira plataforma da América Latina para monitoramento e
-                transparência das principais iniciativas em neutralização de
-                carbono no Brasil.
-              </Typography>
-              <Typography
-                align="center"
-                component="p"
-                variant="body1"
-                color="GrayText"
-                sx={{ m: "1rem" }}
-              >
-                O objetivo desse sistema é prover informação transparente aos
-                signatários que compensam as suas emissões na plataforma Carbon
-                Fair e nos programas CO2 Neutro, Evento Neutro e Frete CO2
-                Neutro, garantindo a não-duplicidade e real benefício ambiental
-                no uso dos instrumentos de compensação adquiridos nos mercados
-                de carbono.
-              </Typography>
-              <Typography
-                align="center"
-                component="p"
-                variant="body1"
-                color="GrayText"
-                sx={{ m: "1rem" }}
-              >
-                A disponibilidade ou abertura dos dados no Registro é opcional,
-                porém todas as informações ficam registradas internamente.
-              </Typography>
-              <Typography
-                align="center"
-                component="p"
-                variant="body1"
-                color="GrayText"
-                sx={{ m: "1rem" }}
-              >
-                A veracidade e não-duplicidade de quaisquer instrumentos de
-                compensação utilizados nas empresas e eventos é sua garantia de
-                qualidade e credibilidade. Quaisquer irregularidades,
-                contacte-nos imediatamente.
-              </Typography>
-              <Typography
-                align="center"
-                component="p"
-                variant="body1"
-                color="GrayText"
-                sx={{ m: "1rem" }}
-              >
-                Caso deseje saber mais sobre o processo de certificação e
-                “aposentadoria” de créditos de carbono e programas de
-                neutralização de carbono da Eccaplan, entre em contato conosco
-                em carbono@eccaplan.com.br.
-              </Typography>
+              <p
+                className="whitespace-pre-line text-base text-gray-600 text-center"
+                dangerouslySetInnerHTML={{ __html: t("txt-a8ffcf50") }}
+              />
             </Box>
           </div>
         </section>
@@ -180,14 +146,14 @@ function RegisterPage() {
               fontWeight="bold"
               sx={{ m: "2rem" }}
             >
-              Ultimos Registros Compensados
+              {t("lbl-768e6701")}
             </Typography>
 
             <Grid container sx={{ mb: "2rem" }}>
               <Grid item xs={12} md={10.1}>
                 <InputCustomized
                   ref={inputRef}
-                  placeholder="Digite para pesquisar por beneficiário"
+                  placeholder={t("fld-9daf7791")}
                   onKeyDown={(event) =>
                     event.key === "Enter" &&
                     setFilter(
@@ -204,7 +170,7 @@ function RegisterPage() {
                     )
                   }
                 >
-                  Pesquisar
+                  {t("btn-03267c75")}
                 </CustomButton>
               </Grid>
             </Grid>
@@ -222,7 +188,7 @@ function RegisterPage() {
           </div>
         </Box>
 
-        <RecordsSection />
+        <RecordsSection texts={texts} />
       </main>
     </div>
   );

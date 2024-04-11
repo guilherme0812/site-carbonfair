@@ -21,6 +21,13 @@ export async function generateStaticParams() {
   }));
 }
 
+export async function generateMetadata({ params }: any) {
+  return {
+    title: params.folder2,
+    description: `Página de ${params.folder2}`,
+  };
+}
+
 export default async function Page({
   params,
 }: {
@@ -29,7 +36,7 @@ export default async function Page({
   const { lang, folder1, folder2 } = params;
 
   //pages
-  const pagesData = await getPages(folder2);
+  const pagesData = await getPages(folder2, ["projeto", "cliente"]);
   const data = pagesData.find((p) => p.lang == lang);
 
   //navbar requests
@@ -46,6 +53,7 @@ export default async function Page({
   if (!data) {
     return <div>Erro ao encontrar dado da página</div>;
   }
+
   return (
     <div>
       <Navbar

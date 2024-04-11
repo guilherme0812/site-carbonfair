@@ -1,4 +1,4 @@
-import { Gallery } from "@/components/patterns";
+// import { Gallery } from "@/components/patterns";
 import { ICBProject } from "@/hooks/useApiProjects";
 import { LangType } from "@/services/getPages";
 import { Box, Grid, Typography, useTheme } from "@mui/material";
@@ -11,6 +11,8 @@ import { useI18n } from "@/hooks/useI18n";
 import ProjectData from "./ProjectData";
 import ProjectDetails from "./ProjectDetails";
 import ProjectDocuments from "./ProjectDocuments";
+import { Gallery } from "carbonfair-ui";
+import GallerySection from "./GallerySection";
 
 const labelStyle = {
   align: "center",
@@ -125,7 +127,7 @@ const ProjectPage = async ({
             </Grid>
             <Grid item xs={12} md={2}>
               <h3
-                className="text-base whitespace-pre-line font-bold text-green-800"
+                className="text-base text-center whitespace-pre-line font-bold text-green-800"
                 dangerouslySetInnerHTML={{ __html: t("lbl-e1c99165") }}
               />
               <Typography {...(labelStyle as any)}>
@@ -139,9 +141,7 @@ const ProjectPage = async ({
       </div>
 
       {imageList.length > 0 && (
-        <Box className="container">
-          <Gallery imageList={[...imageList]} />
-        </Box>
+        <GallerySection options={imageList.map((list) => list.des_url)} />
       )}
 
       <div className="container">

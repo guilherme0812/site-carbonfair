@@ -1,6 +1,7 @@
 import SupportPage from "@/components/pages/apoiar";
 import SubscriptionForPartnersPage from "@/components/pages/assinatura-para-parceiros";
 import ContactPage from "@/components/pages/contato";
+import OffsetCarbonCreditPage from "@/components/pages/credito-carbono-compensado";
 import ToolsPage from "@/components/pages/ferramentas";
 import EmissionsManagementPage from "@/components/pages/gestao-de-emissoes";
 import MarketplacePage from "@/components/pages/marktplace";
@@ -18,11 +19,13 @@ function PageContent({
   texts,
   lang,
   extraLinks,
+  searchParams,
 }: {
   id: PageId;
   texts: I18nTexts;
   extraLinks: I18nTexts;
   lang: LangType;
+  searchParams: { [key: string]: string | string[] | undefined };
 }) {
   return (
     <>
@@ -51,7 +54,14 @@ function PageContent({
       ) : id == "quem-somos" ? (
         <WhoWeArePage texts={texts} lang={lang} />
       ) : id == "registro" ? (
-        <RegisterPage />
+        <RegisterPage texts={texts} lang={lang} extraLinks={extraLinks} />
+      ) : id == "credito-carbono-compensado" ? (
+        <OffsetCarbonCreditPage
+          searchParams={searchParams}
+          params={{}}
+          texts={texts}
+          lang={lang}
+        />
       ) : id == "selos-de-neutralizacao" ? (
         <NaturalizarionSealPage texts={texts} lang={lang} />
       ) : (

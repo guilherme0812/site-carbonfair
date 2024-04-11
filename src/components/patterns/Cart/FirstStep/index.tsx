@@ -66,13 +66,15 @@ function FirstStep({
             <FormControlLabel
               value="PIX"
               control={<Radio />}
-              label={<Typography variant="h6">PIX</Typography>}
+              label={<Typography variant="body2">PIX</Typography>}
             />
             {total > 4 && (
               <FormControlLabel
                 value="card"
                 control={<Radio />}
-                label={<Typography variant="h6">Cartão de crédito</Typography>}
+                label={
+                  <Typography variant="body2">Cartão de crédito</Typography>
+                }
               />
             )}
           </RadioGroup>

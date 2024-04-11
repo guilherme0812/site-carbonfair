@@ -67,7 +67,7 @@ const CartContainer = ({
               />
 
               <Typography
-                variant={mdDown ? "subtitle1" : "h6"}
+                variant={mdDown ? "subtitle2" : "subtitle1"}
                 component="h2"
                 fontWeight="bold"
                 color="#fff"

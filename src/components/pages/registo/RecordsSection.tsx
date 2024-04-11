@@ -7,6 +7,8 @@ import { useApiCarbonRecords } from "../../../hooks/useApiCarbonRecord";
 import { Box, Grid, Typography } from "@mui/material";
 import { InputCustomized } from "./InputCustomized";
 import { CustomButton } from "./CustomButton";
+import { I18nTexts } from "@/types";
+import { useI18n } from "@/hooks/useI18n";
 
 interface IItem {
   parceiro: string;
@@ -15,7 +17,8 @@ interface IItem {
   data: string;
 }
 
-const RecordsSection = () => {
+const RecordsSection = ({ texts }: { texts: I18nTexts }) => {
+  const { t } = useI18n(texts);
   const inputRef = React.useRef<HTMLInputElement>(null);
 
   const [page, setPage] = React.useState(0);
@@ -33,9 +36,9 @@ const RecordsSection = () => {
   );
 
   const columns: GridColDef[] = [
-    { field: "data", headerName: "Data", maxWidth: 100 },
-    { field: "parceiro", headerName: "Parceiro", flex: 1 },
-    { field: "projetos_apoiados", headerName: "Projeto", flex: 1 },
+    { field: "data", headerName: t("lbl-37ca1dc6"), maxWidth: 100 },
+    { field: "parceiro", headerName: t("lbl-ac7a7237"), flex: 1 },
+    { field: "projetos_apoiados", headerName: t("lbl-efd3ce79"), flex: 1 },
     {
       field: "link_neutralizacao",
       headerName: "Link",
@@ -47,7 +50,7 @@ const RecordsSection = () => {
           rel="noreferrer"
           style={{ display: "block", width: "100%" }}
         >
-          <NewButton>Visualizar</NewButton>
+          <NewButton>{t("btn-e2382610")}</NewButton>
         </a>
       ),
     },
@@ -76,7 +79,7 @@ const RecordsSection = () => {
             fontWeight="bolder"
             sx={{ m: "2rem" }}
           >
-            Banco de Registros
+            {t("btn-bdfdabf1")}
           </Typography>
         </Box>
 
@@ -85,7 +88,7 @@ const RecordsSection = () => {
             <Grid item xs={12} md={10.1}>
               <InputCustomized
                 ref={inputRef}
-                placeholder="Digite para pesquisar"
+                placeholder={t("fld-fd8c3b97")}
                 // onChange={(e) => setFilter(e.target.value)}
               />
             </Grid>
@@ -97,7 +100,7 @@ const RecordsSection = () => {
                   )
                 }
               >
-                Pesquisar
+                {t("btn-8609ee1b")}
               </CustomButton>
             </Grid>
           </Grid>

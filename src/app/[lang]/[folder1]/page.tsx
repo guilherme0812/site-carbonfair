@@ -20,10 +20,19 @@ export async function generateStaticParams() {
   }));
 }
 
+export async function generateMetadata({ params }: any) {
+  return {
+    title: params.folder1,
+    description: `Página de ${params.folder1}`,
+  };
+}
+
 export default async function Page({
   params,
+  searchParams,
 }: {
   params: { lang: LangType; folder1: string };
+  searchParams: any;
 }) {
   const { lang, folder1 } = params;
 
@@ -60,6 +69,7 @@ export default async function Page({
         texts={data.text}
         lang={lang}
         extraLinks={extraLinks as unknown as I18nTexts}
+        searchParams={searchParams as unknown as any}
       />
     </div>
   );

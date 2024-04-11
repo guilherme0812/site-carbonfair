@@ -102,7 +102,7 @@ const CartItem = (item: CartProduct) => {
               })}
             >
               <Box>
-                <Typography variant="body1">{item.des_projeto}</Typography>
+                <Typography variant="body2">{item.des_projeto}</Typography>
               </Box>
 
               <Divider sx={{ width: "90%" }} />

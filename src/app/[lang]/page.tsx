@@ -34,7 +34,7 @@ async function Page({ params }: { params: { lang: string } }) {
   const data = await getPages(HOME);
   const pageData = data.find((page) => page.lang == params.lang);
 
-  const navbarPages = await getPages(NAVBAR, "");
+  const navbarPages = await getPages(NAVBAR);
   const navbarText = navbarPages.find((page) => page.lang == params.lang)?.text;
   const languagesReq = await fetch(
     `${process.env.NEXT_PUBLIC_CARBON_FAIR_API_URL}/carbonfair-publico/idiomas`,

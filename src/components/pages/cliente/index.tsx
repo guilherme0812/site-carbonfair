@@ -1,12 +1,8 @@
 import Header from "@/components/pages/cliente/Header";
-import { ResponsiveImage } from "@/components/ui";
 import { ICBClient, ICBClientEvent } from "@/hooks/useApiClients";
 import { Box, Grid, Typography } from "@mui/material";
-import nextDynamic from "next/dynamic";
 import { I18nTexts } from "@/types";
 import { LangType } from "@/services/getPages";
-import { IMarker } from "@/components/ui/Map";
-import { ICBProject } from "@/hooks/useApiProjects";
 import { useI18n } from "@/hooks/useI18n";
 import ClientEventFilter from "./ClientEventFilter";
 import Image from "next/image";
@@ -14,23 +10,6 @@ import MapSection from "./MapSection";
 
 export const dynamic = "force-dynamic";
 export const dynamicParams = false;
-
-const getProjects = async () => {
-  let res = await fetch(
-    `${process.env.NEXT_PUBLIC_CARBON_FAIR_API_URL}/carbonfair-publico/projetos`,
-    {
-      headers: { Authorization: "abc" },
-      cache: "no-store",
-    }
-  );
-
-  if (!res.ok) {
-    // This will activate the closest `error.js` Error Boundary
-    throw new Error("Failed to fetch data");
-  }
-
-  return res.json();
-};
 
 const ClientPage = async ({
   texts,
@@ -201,12 +180,5 @@ const ClientPage = async ({
     </div>
   );
 };
-
-// export async function generateMetadata({ params }: Props) {
-//   return {
-//     title: params.slug,
-//     description: `Página do cliente ${params.slug}`,
-//   };
-// }
 
 export default ClientPage;

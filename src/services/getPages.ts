@@ -29,17 +29,19 @@ export type PageId =
   | "footer"
   | "header"
   | "projeto"
-  | "cliente";
+  | "cliente"
+  | "evento"
+  | "credito-carbono-compensado";
 
 export const getPages = async (
   folder: string,
-  lang?: string,
+  id?: PageId[],
   revalidate?: number
 ) => {
   let url = `${process.env.NEXT_PUBLIC_CARBON_FAIR_API_URL}/carbonfair-publico/paginas?folder=${folder}`;
 
-  if (lang !== undefined) {
-    url += `&idioma=${lang}`;
+  if (id !== undefined) {
+    url += `&id=${id}`;
   }
 
   const res = await fetch(url, {

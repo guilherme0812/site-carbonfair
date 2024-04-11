@@ -4,10 +4,17 @@ import Row from "./Row";
 import { redirect } from "next/navigation";
 import { CarbonRecord } from "@/hooks/useApiCarbonRecord";
 import moment from "moment";
+import { Header } from "@/components/patterns";
+import HeaderDefaultContent from "@/components/patterns/Header/HeaderDefaultContent";
+import { LangType } from "@/services/getPages";
+import { I18nTexts } from "@/types";
+import { useI18n } from "@/hooks/useI18n";
 
 type Props = {
   params: {};
   searchParams: { [key: string]: string | string[] | undefined };
+  lang: LangType;
+  texts: I18nTexts;
 };
 
 const getRecord = async (recordId: number) => {
@@ -23,9 +30,14 @@ const getRecord = async (recordId: number) => {
   return res.json();
 };
 
-const Page = async (props: Props) => {
-  const recordId = props.searchParams.id_registro;
-
+const OffsetCarbonCreditPage = async ({
+  lang,
+  params,
+  searchParams,
+  texts,
+}: Props) => {
+  const recordId = searchParams.id_registro;
+  const { t } = useI18n(texts);
   if (!recordId) {
     redirect("/404");
   }
@@ -34,21 +46,12 @@ const Page = async (props: Props) => {
 
   return (
     <>
-      <Container>
-        <div className="white-linear-gradient">
-          <div className="container p-0">
-            <Grid container>
-              <Grid item xs={12} md={5} sx={{ px: "2rem" }}>
-                <Box className="content">
-                  <Box>
-                    <h1>Crédito de Carbono Compensado</h1>
-                  </Box>
-                </Box>
-              </Grid>
-            </Grid>
-          </div>
-        </div>
-      </Container>
+      <Header
+        url="/background/apoiar.jpg"
+        backgroundStyle={{ backgroundPosition: "center 100%" }}
+      >
+        <HeaderDefaultContent lang={lang} title={t("lbl-d99fc834")} />
+      </Header>
 
       <Box sx={{ position: "relative", minHeight: "100vh" }}>
         <div className="container">
@@ -57,13 +60,17 @@ const Page = async (props: Props) => {
             <Grid item xs={12} md={8} lg={8}>
               {/* Serial */}
               <Row>
-                <Box sx={{ width: "41%", fontWeight: 700 }}>Serial</Box>
+                <Box sx={{ width: "41%", fontWeight: 700 }}>
+                  {t("lbl-772c8a78")}
+                </Box>
                 <Box sx={{ width: "59%" }}>{record?.num_serial}</Box>
               </Row>
 
               {/* Projeto */}
               <Row>
-                <Box sx={{ width: "41%", fontWeight: 700 }}>Projeto</Box>
+                <Box sx={{ width: "41%", fontWeight: 700 }}>
+                  {t("lbl-1934e45a")}
+                </Box>
                 <Box sx={{ width: "59%" }}>
                   <a
                     href={`/projeto/${record?.des_url_prefix}`}
@@ -82,7 +89,9 @@ const Page = async (props: Props) => {
 
               {/* Data Inicio */}
               <Row>
-                <Box sx={{ width: "41%", fontWeight: 700 }}>Data de ínicio</Box>
+                <Box sx={{ width: "41%", fontWeight: 700 }}>
+                  {t("lbl-cf5ce035")}
+                </Box>
                 <Box sx={{ width: "59%" }}>
                   {record?.dta_vintage_inicio &&
                     moment(record?.dta_vintage_inicio, "YYYY/MM/DD").format(
@@ -93,7 +102,9 @@ const Page = async (props: Props) => {
 
               {/* Data Final */}
               <Row>
-                <Box sx={{ width: "41%", fontWeight: 700 }}>Data final</Box>
+                <Box sx={{ width: "41%", fontWeight: 700 }}>
+                  {t("lbl-aea7a4f3")}
+                </Box>
                 <Box sx={{ width: "59%" }}>
                   {record?.dta_vintage_final &&
                     moment(record?.dta_vintage_final, "YYYY/MM/DD").format(
@@ -105,7 +116,7 @@ const Page = async (props: Props) => {
               {/* Empresaverificadora */}
               <Row>
                 <Box sx={{ width: "41%", fontWeight: 700 }}>
-                  Empresa verificadora
+                  {t("lbl-74c54fc3")}
                 </Box>
                 <Box sx={{ width: "59%" }}>
                   {record?.des_empresa_verificadora}
@@ -114,28 +125,32 @@ const Page = async (props: Props) => {
 
               {/* Beneficiario */}
               <Row>
-                <Box sx={{ width: "41%", fontWeight: 700 }}>Beneficiário</Box>
+                <Box sx={{ width: "41%", fontWeight: 700 }}>
+                  {t("lbl-43a4a331")}
+                </Box>
                 <Box sx={{ width: "59%" }}>{record?.des_beneficial}</Box>
               </Row>
 
               {/* Quantidade de unidades */}
               <Row>
                 <Box sx={{ width: "41%", fontWeight: 700 }}>
-                  Quantidade de unidades
+                  {t("lbl-45244df0")}
                 </Box>
                 <Box sx={{ width: "59%" }}>{record?.num_credito_carbono}</Box>
               </Row>
 
               {/* Verificação */}
               <Row>
-                <Box sx={{ width: "41%", fontWeight: 700 }}>Padrão</Box>
+                <Box sx={{ width: "41%", fontWeight: 700 }}>
+                  {t("lbl-03733ecf")}
+                </Box>
                 <Box sx={{ width: "59%" }}>{record?.des_tipo_verificacao}</Box>
               </Row>
 
               {/* Texto adicional */}
               <Row>
                 <Box sx={{ width: "41%", fontWeight: 700 }}>
-                  Texto adicional
+                  {t("lbl-60552447")}
                 </Box>
                 <Box sx={{ width: "59%" }}>{record?.des_texto_adicional}</Box>
               </Row>
@@ -149,7 +164,7 @@ const Page = async (props: Props) => {
                       fontWeight: 700,
                     }}
                   >
-                    URL Externa do Registro
+                    {t("lbl-25c6a360")}
                   </Box>
                   <Box sx={{ width: "59%" }}>
                     <a
@@ -175,4 +190,4 @@ const Page = async (props: Props) => {
   );
 };
 
-export default Page;
+export default OffsetCarbonCreditPage;

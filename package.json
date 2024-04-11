@@ -22,7 +22,7 @@
     "aos": "^2.3.4",
     "axios": "^1.5.0",
     "babel-loader": "^8.2.5",
-    "carbonfair-ui": "^1.4.60",
+    "carbonfair-ui": "^1.4.63",
     "emotion": "^11.0.0",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
