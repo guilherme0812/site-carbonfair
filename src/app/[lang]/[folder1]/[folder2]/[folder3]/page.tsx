@@ -5,6 +5,7 @@ import Gallery, { GalleryImage } from "@/components/patterns/Gallery";
 import { IMarker } from "@/components/ui/Map";
 import { ICBClient, ICBClientEvent } from "@/hooks/useApiClients";
 import { ICBProject } from "@/hooks/useApiProjects";
+import { useI18n } from "@/hooks/useI18n";
 import { getFolders } from "@/services/folders";
 import { LangType, getPages } from "@/services/getPages";
 import { getLanguages } from "@/services/language";
@@ -50,6 +51,7 @@ export default async function Page({
   //pages
   const pagesData = await getPages(folder2, ["evento"]);
   const data = pagesData.find((p) => p.lang == lang);
+  const { t } = useI18n(data?.text as unknown as I18nTexts);
 
   //navbar requests
   const navbarPages = await getPages(NAVBAR);
@@ -60,6 +62,7 @@ export default async function Page({
   const extraLinksPages = await getPages("links_extras");
   const extraLinks = extraLinksPages.find((i) => i.lang == params.lang)?.text;
 
+  const { t: links } = useI18n(extraLinks as unknown as I18nTexts);
   const languages = await getLanguages();
 
   if (!data) {
@@ -112,7 +115,7 @@ export default async function Page({
     name: project.des_projeto,
     projectDefault: project.des_padrao,
     type: project.des_tipo_projeto,
-    link: "/projeto/" + project.des_url_prefix,
+    link: `/${lang}/${links("lnk-5e8299f8")}/${project.des_url_prefix}`,
   };
 
   const imageList: GalleryImage[] = project.documentos.map((doc) => ({
@@ -147,7 +150,7 @@ export default async function Page({
           align="center"
           sx={{ mb: "4rem" }}
         >
-          Indicadores dessa ação
+          {t("lbl-a339442a")}
         </Typography>
 
         <Grid container spacing={2} justifyContent="center" sx={{ mb: "2rem" }}>
@@ -163,9 +166,10 @@ export default async function Page({
                 currency: "BRL",
               }).format(Number(event.num_kg_co2))}
             </Typography>
-            <Typography variant="subtitle1" align="center">
-              kg de CO<sub>2</sub> compensados
-            </Typography>
+            <p
+              className="text-base text-center"
+              dangerouslySetInnerHTML={{ __html: t("txt-25de8fc4") }}
+            />
           </Grid>
 
           <Grid item xs={12} md={6} lg={3}>
@@ -181,7 +185,7 @@ export default async function Page({
               }).format(Number(event.num_arvores_plantadas))}
             </Typography>
             <Typography variant="subtitle1" align="center">
-              Número de árvores plantadas
+              {t("txt-cbb53874")}
             </Typography>
           </Grid>
 
@@ -198,7 +202,7 @@ export default async function Page({
               }).format(Number(event.num_total_apoiadores))}
             </Typography>
             <Typography variant="subtitle1" align="center">
-              Número de apoiadores
+              {t("txt-c0903f3")}
             </Typography>
           </Grid>
         </Grid>
@@ -224,7 +228,7 @@ export default async function Page({
                 align="center"
                 component="h4"
               >
-                Status
+                {t("lbl-bef51d54")}
               </Typography>
               <Typography textAlign="center">
                 {project?.des_status_projeto}
@@ -238,7 +242,7 @@ export default async function Page({
                 align="center"
                 component="h4"
               >
-                Tipo de Projeto
+                {t("lbl-12c7603e")}
               </Typography>
 
               <Typography
@@ -257,7 +261,7 @@ export default async function Page({
                 align="center"
                 component="h4"
               >
-                Bioma
+                {t("lbl-8aa80573")}
               </Typography>
 
               <Typography textAlign="center">{project?.des_bioma}</Typography>
@@ -269,7 +273,7 @@ export default async function Page({
                 align="center"
                 component="h4"
               >
-                Local
+                {t("lbl-0c3e4cc5")}
               </Typography>
 
               <Typography textAlign="center">{project?.des_cidade}</Typography>
@@ -281,7 +285,7 @@ export default async function Page({
                 align="center"
                 component="h4"
               >
-                Padrão
+                {t("lbl-e417947f")}
               </Typography>
 
               <Typography textAlign="center">{project?.des_padrao}</Typography>

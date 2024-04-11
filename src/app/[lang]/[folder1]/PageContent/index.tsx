@@ -1,5 +1,6 @@
 import SupportPage from "@/components/pages/apoiar";
 import SubscriptionForPartnersPage from "@/components/pages/assinatura-para-parceiros";
+import ProjectRegisterPage from "@/components/pages/cadastrar-projeto";
 import ContactPage from "@/components/pages/contato";
 import OffsetCarbonCreditPage from "@/components/pages/credito-carbono-compensado";
 import ToolsPage from "@/components/pages/ferramentas";
@@ -31,6 +32,8 @@ function PageContent({
     <>
       {id == "apoiar" ? (
         <SupportPage texts={texts} lang={lang} />
+      ) : id == "cadastrar-projeto" ? (
+        <ProjectRegisterPage texts={texts} lang={lang} />
       ) : id == "assinatura-para-parceiros" ? (
         <SubscriptionForPartnersPage />
       ) : id == "contato" ? (

@@ -2,7 +2,7 @@
 
 import { Box, Typography, Grid } from "@mui/material";
 import * as React from "react";
-import Header from "./Header";
+// import Header from "./Header";
 import {
   GrayTitle,
   NewButton,
@@ -10,78 +10,77 @@ import {
   Step,
   StepItem,
 } from "../../ui";
-import { NewLetter } from "../../patterns";
+import { I18nTexts } from "@/types";
+import { LangType } from "@/services/getPages";
+import { useI18n } from "@/hooks/useI18n";
+import { Header } from "@/components/patterns";
+import HeaderDefaultContent from "@/components/patterns/Header/HeaderDefaultContent";
 
-const requiments = [
-  "efetiva redução de emissões de Gases de Efeito Estufa (GEE) e adicionalidade, quando comparada as exigências locais e prática de mercado",
-  "impactos sociais e ambientais representativos, mensuráveis e com potencial de replicação",
-  <>
-    processo e tecnologia de redução de emissões de CO<sub>2</sub> comprovada e
-    com metodologia reconhecida por institutos de pesquisa reconhecidos ou
-    plataformas de créditos de carbono internacionais
-  </>,
-  "impacto econômico positivo no entorno e necessidade dos recursos financeiros da venda dos créditos de carbono para se viabilizarem",
-  "benefícios alinhados aos ODS (Objetivos do Desenvolvimento Sustentável)",
-  "contrato e compromisso de comercializar e disponibilizar os créditos de carbono e reduções de emissões apenas na Carbon Fair Trade (CFT). O projeto ambiental poderá retirar os seus créditos de carbono disponíveis da CFT, porém com aviso prévio e restrito aos créditos disponíveis. Os créditos já comercializados e/ou compensados (offset) não podem ser mais utilizados. Solicite mais informações sobre políticas para evitar a dupla contagem dos créditos emitidos.",
-];
+const ProjectRegisterPage = ({
+  texts,
+  lang,
+}: {
+  texts: I18nTexts;
+  lang: LangType;
+}) => {
+  const { t } = useI18n(texts);
 
-const supportedProjects = [
-  "Agricultura e agrofloresta: introdução de práticas de menor emissão em sistemas agrícolas ou florestais, como, por exemplo, a Agricultura Regenerativa, Sistemas Agroflorestais.",
-  "Restauro florestal com espécies nativas: reflorestamento de áreas que originalmente foram florestas, porém estavam sendo utilizadas de outra forma. Não são elegíveis projetos de monocultura ou florestas homogêneas.",
-  "REDD+: projetos de Redução de Emissões provenientes do Desmatamento e Degradação Florestal, assim como pela conservação, manejo florestal sustentável e o aumento de estoques de carbono nas florestas.",
-  "Outros projetos AFOLU: projetos de Agricultura, Floresta e Uso do Solo, que desenvolvam atividades de redução ou remoção de GEE",
-];
+  const requiments = [
+    t("txt-9e3e9356"),
+    t("txt-0a85f168"),
+    t("txt-69a3beac"),
+    t("txt-02d85467"),
+    t("txt-06ca0246"),
+    t("txt-94983c0b"),
+  ];
 
-const energy = [
-  "Biomassa renovável: uso de biomassa de origem renovável para geração de energia térmica e/ou elétrica em substituição a fontes energéticas não renováveis.",
-  "Energia eólica",
-  "Energia solar",
-  "Pequena Central Hidrelétrica",
-  "Metano para energia",
-  "Eficiência Energética",
-  "Fogões eficientes: fogões domésticos eficientes e/ou que utilizem fontes renováveis de energia.",
-  "Troca de combustível: substituição de combustíveis não renováveis com alta emissão de GEE por fontes energéticas renováveis e/ou não renováveis de menor emissão de GEE",
-];
+  const supportedProjects = [
+    t("txt-a3e9f65a"),
+    t("txt-cf1a67aa"),
+    t("txt-45a3578d"),
+    t("txt-225e285d"),
+  ];
 
-const waste = [
-  "Reciclagem e/ou reuso",
-  "Compostagem",
-  "Tratamento de efluentes orgânicos",
-  "Biodigestores",
-  "Purificadores de água",
-];
+  const energy = [
+    t("txt-4d32fa5b"),
+    t("txt-6b0ccf6d"),
+    t("txt-bf4254b2"),
+    t("txt-b7c1dc58"),
+    t("txt-aae207c3"),
+    t("txt-a87cad66"),
+    t("txt-1f276ae2"),
+    t("txt-e02f7ce9"),
+  ];
 
-const step1 = [
-  "O projetos devem atender as exigências detalhadas acima: adicionalidade em redução ou captura de GEE, benefícios sociais, benefícios ambientais, metodologia de cálculo e verificação, necessidade de apoio financeiro e replicabilidade",
-  "Enviar documentos que comprovem estas exigências e o alinhamento aos ODS",
-  "Breve apresentação do projeto, resultados e fase de desenvolvimento",
-  "Tecnologia ou processo utilizado",
-  <>
-    Tamanho da área destinada ao projeto ou potencial de redução/captura de CO
-    <sub>2</sub>
-  </>,
-  "Envio de Certificações, caso tenha",
-];
+  const waste = [
+    t("txt-5fc26e45"),
+    t("txt-83d5aeb4"),
+    t("txt-93206282"),
+    t("txt-ff1b1529"),
+    t("txt-305312b1"),
+  ];
 
-const step2 = [
-  "Seleção de consultoria especializada para realizar a avaliação detalhada dos documentos e metodologias de validação",
-  "Análise de custos para estudo de viabilidade técnica e financeira para obtenção e comercialização dos créditos de carbono (custos para adaptação, certificação e verificação VS potencial de receita com as vendas dos créditos de carbono)",
-  "Levantamento dos resultados e emissão de Certificação",
-  "Registro do projeto na plataforma Carbon Fair Trade, com status de projeto em análise",
-];
+  const step1 = [
+    t("txt-2dfb36fd"),
+    t("txt-a607efa3"),
+    t("txt-6431f865"),
+    t("txt-5e57188e"),
+    t("txt-c379992f"),
+    t("txt-dd57e187"),
+  ];
 
-const step3 = [
-  "Seleção de instituto de pesquisa ou empresa especializada de Verificação da tecnologia aplicada",
-  "Análise de todos os documentos do projeto, metodologia e relatórios emitidos pela certificadora",
-  "Emissão de Certificado de Verificação",
-];
+  const step2 = [
+    t("txt-8d2ed88a"),
+    t("txt-b98268e6"),
+    t("txt-b98268e6"),
+    t("txt-48372f5c"),
+    t("txt-ddd75766"),
+  ];
 
-const step4 = [
-  "Disposição dos créditos de carbono voluntários certificados na plataforma Carbon Fair Trade",
-  "Créditos de carbono disponibilizados nas contas indicadas pelos donos dos projeto",
-];
+  const step3 = [t("txt-7597746a"), t("txt-5d2ab4e5"), t("txt-bbd2accd")];
 
-const ProjectRegister = () => {
+  const step4 = [t("txt-271d0c67"), t("txt-cb8d5025")];
+
   const typographyProps = {
     component: "p",
     variant: "body1",
@@ -98,7 +97,11 @@ const ProjectRegister = () => {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
+      <Header url="/background/cadastrar-projeto.jpg">
+        <HeaderDefaultContent lang={lang} title={t("lbl-028666af")} />
+        <p className="text-white text-lg mt-2">{t("txt-a5d8489e")}</p>
+      </Header>
 
       <Box
         component="main"
@@ -108,29 +111,10 @@ const ProjectRegister = () => {
         <section>
           <div className="container">
             <Box component="header">
-              <Typography
-                component="p"
-                variant="body1"
-                color="GrayText"
-                sx={{ m: "1rem" }}
-              >
-                O principal objetivo da Carbon Fair Trade é incentivar projetos
-                com soluções baseadas na natureza (Nature Based Solutions), que
-                tenham benefícios sociais e ambientais mensuráveis.
-              </Typography>
-              <Typography
-                component="p"
-                variant="body1"
-                color="GrayText"
-                sx={{ m: "1rem" }}
-              >
-                Todos os projetos registrados na Carbon Fair Trade, que possuem
-                créditos de carbono voluntários, devem seguir as exigências do
-                padrão CFS - Carbon Fair Standard e passarem por processo
-                certificados e verificados por empresas e institutos de
-                pesquisas reconhecidos nacionalmente e internacionalmente. Veja
-                mais em Quem Somos.
-              </Typography>
+              <p
+                className="text-base text-gray-600 whitespace-pre-line"
+                dangerouslySetInnerHTML={{ __html: t("txt-708f138a") }}
+              />
             </Box>
           </div>
         </section>
@@ -141,19 +125,17 @@ const ProjectRegister = () => {
             sx={{ borderBottom: "1px solid #bdbdbd", mb: 2 }}
           >
             <GrayTitle style={{ paddingBottom: 0 }}>
-              Os projetos registrados devem ter:
+              {t("lbl-1aed85c0")}
             </GrayTitle>
           </Box>
 
-          <ul>
+          <ul className="list-disc">
             {requiments.map((item, index) => (
-              <Typography
+              <li
+                className="mb-1 whitespace-pre-line text-gray-600"
+                dangerouslySetInnerHTML={{ __html: item }}
                 key={index}
-                {...(typographyProps as any)}
-                component="li"
-              >
-                {item}
-              </Typography>
+              />
             ))}
           </ul>
 
@@ -183,7 +165,7 @@ const ProjectRegister = () => {
             }}
           >
             <GrayTitle style={{ paddingBottom: 0 }}>
-              Quais tipos de projetos apoiamos?
+              {t("lbl-b3c1d4f0")}
             </GrayTitle>
           </Box>
 
@@ -195,18 +177,17 @@ const ProjectRegister = () => {
           >
             <Grid item xs={12} md={6.5}>
               <Typography variant="h6" fontWeight="bold">
-                Agricultura, Floresta e Uso do Solo:
+                {t("lbl-7d6de1dc")}
               </Typography>
 
               <ul>
                 {supportedProjects.map((item, index) => (
-                  <Typography
+                  <li
+                    className="mb-1 whitespace-pre-line text-gray-600"
                     key={index}
-                    {...(typographyProps as any)}
-                    component="li"
                   >
                     {item}
-                  </Typography>
+                  </li>
                 ))}
               </ul>
             </Grid>
@@ -240,36 +221,34 @@ const ProjectRegister = () => {
             </Grid>
             <Grid item xs={12} md={6.5}>
               <Typography variant="h6" fontWeight="bold">
-                Energia:
+                {t("lbl-95832c3b")}
               </Typography>
 
               <ul>
                 {energy.map((item, index) => (
-                  <Typography
+                  <li
+                    className="mb-1 whitespace-pre-line text-gray-600"
                     key={index}
-                    {...(typographyProps as any)}
-                    component="li"
                   >
                     {item}
-                  </Typography>
+                  </li>
                 ))}
               </ul>
             </Grid>
 
             <Grid item xs={12} md={6.5}>
               <Typography variant="h6" fontWeight="bold">
-                Resíduos:
+                {t("lbl-7ac4cde2")}
               </Typography>
 
               <ul>
                 {waste.map((item, index) => (
-                  <Typography
+                  <li
+                    className="mb-1 whitespace-pre-line text-gray-600"
                     key={index}
-                    {...(typographyProps as any)}
-                    component="li"
                   >
                     {item}
-                  </Typography>
+                  </li>
                 ))}
               </ul>
             </Grid>
@@ -293,7 +272,7 @@ const ProjectRegister = () => {
             sx={{ borderBottom: "1px solid #bdbdbd", mb: 2 }}
           >
             <GrayTitle style={{ paddingBottom: 0 }}>
-              Etapas de submissão e aprovação dos projetos:
+              {t("lbl-8f3d70f8")}
             </GrayTitle>
           </Box>
 
@@ -304,7 +283,7 @@ const ProjectRegister = () => {
                   count={1}
                   title={
                     <Typography fontWeight="bold" variant="h5">
-                      Etapa 1: Avaliação preliminar <br /> de elegibilidade
+                      {t("lbl-cff14e91")}
                     </Typography>
                   }
                 >
@@ -312,13 +291,12 @@ const ProjectRegister = () => {
                     <Box sx={{ width: "50%" }}>
                       <ul>
                         {step1.map((item, index) => (
-                          <Typography
+                          <li
+                            className="mb-1 whitespace-pre-line text-gray-600"
                             key={index}
-                            {...(typographyProps as any)}
-                            component="li"
                           >
                             {item}
-                          </Typography>
+                          </li>
                         ))}
                       </ul>
                     </Box>
@@ -342,7 +320,7 @@ const ProjectRegister = () => {
                   count={2}
                   title={
                     <Typography fontWeight="bold" variant="h5">
-                      Etapa 2: Avaliação e certificação
+                      {t("lbl-d6de1899")}
                     </Typography>
                   }
                 >
@@ -380,7 +358,7 @@ const ProjectRegister = () => {
                   count={3}
                   title={
                     <Typography fontWeight="bold" variant="h5">
-                      Etapa 3: Verificação
+                      {t("lbl-1f93f3bf")}
                     </Typography>
                   }
                 >
@@ -388,13 +366,12 @@ const ProjectRegister = () => {
                     <Box sx={{ width: "50%" }}>
                       <ul>
                         {step3.map((item, index) => (
-                          <Typography
+                          <li
+                            className="mb-1 whitespace-pre-line text-gray-600"
                             key={index}
-                            {...(typographyProps as any)}
-                            component="li"
                           >
                             {item}
-                          </Typography>
+                          </li>
                         ))}
                       </ul>
                     </Box>
@@ -418,7 +395,7 @@ const ProjectRegister = () => {
                   count={4}
                   title={
                     <Typography fontWeight="bold" variant="h5">
-                      Etapa 4: Comercialização
+                      {t("lbl-56c2b7fa")}
                     </Typography>
                   }
                 >
@@ -426,13 +403,12 @@ const ProjectRegister = () => {
                     <Box sx={{ width: "50%" }}>
                       <ul>
                         {step4.map((item, index) => (
-                          <Typography
+                          <li
+                            className="mb-1 whitespace-pre-line text-gray-600"
                             key={index}
-                            {...(typographyProps as any)}
-                            component="li"
                           >
                             {item}
-                          </Typography>
+                          </li>
                         ))}
                       </ul>
                     </Box>
@@ -477,11 +453,11 @@ const ProjectRegister = () => {
                 fontWeight="bold"
                 sx={{ mb: "2rem" }}
               >
-                Integrar o sistema e engajar os steakholders
+                {t("lbl-0393fc94")}
               </Typography>
 
               <Box sx={{ width: "239px", m: "auto" }}>
-                <NewButton>CLIQUE AQUI!</NewButton>
+                <NewButton>{t("btn-a5459587")}</NewButton>
               </Box>
             </Box>
           </Box>
@@ -492,4 +468,4 @@ const ProjectRegister = () => {
     </>
   );
 };
-export default ProjectRegister;
+export default ProjectRegisterPage;

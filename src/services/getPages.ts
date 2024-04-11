@@ -25,6 +25,7 @@ export type PageId =
   | "projetos-apoiados"
   | "registro"
   | "contato"
+  | "cadastrar-projeto"
   | "home"
   | "footer"
   | "header"
