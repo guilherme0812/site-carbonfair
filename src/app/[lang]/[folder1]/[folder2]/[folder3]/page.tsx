@@ -106,6 +106,15 @@ export default async function Page({
     );
   }
 
+  const clientAllEventsRes = await fetch(
+    `${process.env.NEXT_PUBLIC_CARBON_FAIR_API_URL}/carbonfair-publico/cliente_eventos?id_cliente=${client.id}`,
+    {
+      headers: { Authorization: "abc" },
+      next: { revalidate: 60 },
+    }
+  );
+  const clientAllEvents: ICBClientEvent = await clientAllEventsRes.json();
+
   const marker: IMarker = {
     biome: project.des_bioma,
     kg: Number(project.num_kg_co2),
@@ -150,7 +159,7 @@ export default async function Page({
           align="center"
           sx={{ mb: "4rem" }}
         >
-          {t("lbl-a339442a")}
+          {t("lbl-63f971bd")}
         </Typography>
 
         <Grid container spacing={2} justifyContent="center" sx={{ mb: "2rem" }}>
@@ -168,7 +177,7 @@ export default async function Page({
             </Typography>
             <p
               className="text-base text-center"
-              dangerouslySetInnerHTML={{ __html: t("txt-25de8fc4") }}
+              dangerouslySetInnerHTML={{ __html: t("txt-dc37a15d") }}
             />
           </Grid>
 
@@ -185,7 +194,7 @@ export default async function Page({
               }).format(Number(event.num_arvores_plantadas))}
             </Typography>
             <Typography variant="subtitle1" align="center">
-              {t("txt-cbb53874")}
+              {t("txt-bcbf9cf0")}
             </Typography>
           </Grid>
 
@@ -202,11 +211,61 @@ export default async function Page({
               }).format(Number(event.num_total_apoiadores))}
             </Typography>
             <Typography variant="subtitle1" align="center">
-              {t("txt-c0903f3")}
+              {t("lbl-eff5b935")}
             </Typography>
           </Grid>
         </Grid>
       </Box>
+
+      <Box className="container">
+        <img
+          src={event.des_banner}
+          alt={event.des_banner}
+          style={{
+            maxWidth: 300,
+            display: "block",
+            margin: "auto",
+            marginBottom: "2rem",
+          }}
+        />
+
+        <Typography
+          component="h2"
+          variant="h4"
+          fontWeight="bold"
+          align="center"
+          sx={{ mb: "2rem" }}
+        >
+          {event.des_nome}
+        </Typography>
+
+        <Typography style={{ whiteSpace: "pre-wrap" }}>
+          {event?.txt_descricao_detalhada}
+        </Typography>
+
+        <Box sx={{ mt: "2rem", mb: "4rem" }}>
+          <Gallery imageList={event.imagens} />
+        </Box>
+      </Box>
+
+      {clientAllEvents?.eventos && client?.eventos?.length > 0 && (
+        <>
+          <Typography
+            component="h2"
+            variant="h5"
+            fontWeight="bold"
+            align="center"
+            sx={{ mb: 2 }}
+          >
+            Mais ações apoiadas pela empresa
+          </Typography>
+
+          <ClientEventFilter
+            url={`${client.des_identificador}`}
+            clientId={client.id}
+          />
+        </>
+      )}
 
       <Box className="container">
         <Typography
@@ -228,7 +287,7 @@ export default async function Page({
                 align="center"
                 component="h4"
               >
-                {t("lbl-bef51d54")}
+                {t("lbl-eff5b935")}
               </Typography>
               <Typography textAlign="center">
                 {project?.des_status_projeto}
@@ -242,15 +301,10 @@ export default async function Page({
                 align="center"
                 component="h4"
               >
-                {t("lbl-12c7603e")}
+                {t("lbl-dc9ef803")}
               </Typography>
 
-              <Typography
-                variant="h6"
-                fontWeight="bold"
-                align="center"
-                component="h4"
-              >
+              <Typography textAlign="center">
                 {project?.des_tipo_projeto}
               </Typography>
             </Grid>
@@ -261,7 +315,7 @@ export default async function Page({
                 align="center"
                 component="h4"
               >
-                {t("lbl-8aa80573")}
+                {t("lbl-c7227cfc")}
               </Typography>
 
               <Typography textAlign="center">{project?.des_bioma}</Typography>
@@ -273,7 +327,7 @@ export default async function Page({
                 align="center"
                 component="h4"
               >
-                {t("lbl-0c3e4cc5")}
+                {t("lbl-7fcb5358")}
               </Typography>
 
               <Typography textAlign="center">{project?.des_cidade}</Typography>
@@ -285,7 +339,7 @@ export default async function Page({
                 align="center"
                 component="h4"
               >
-                {t("lbl-e417947f")}
+                {t("lbl-ca8586f1")}
               </Typography>
 
               <Typography textAlign="center">{project?.des_padrao}</Typography>
@@ -324,55 +378,6 @@ export default async function Page({
         <Typography style={{ whiteSpace: "pre-wrap" }} sx={{ mt: "2rem" }}>
           {project.txt_descricao_detalhada}
         </Typography>
-      </Box>
-
-      <Box className="container">
-        <img
-          src={event.des_banner}
-          alt={event.des_banner}
-          style={{
-            maxWidth: 300,
-            display: "block",
-            margin: "auto",
-            marginBottom: "2rem",
-          }}
-        />
-
-        <Typography
-          component="h2"
-          variant="h4"
-          fontWeight="bold"
-          align="center"
-          sx={{ mb: "2rem" }}
-        >
-          {event.des_nome}
-        </Typography>
-
-        <Typography style={{ whiteSpace: "pre-wrap" }}>
-          {event?.txt_descricao_detalhada}
-        </Typography>
-
-        <Box sx={{ mt: "2rem", mb: "4rem" }}>
-          <Gallery imageList={event.imagens} />
-        </Box>
-
-        {client?.eventos && client?.eventos?.length > 1 && (
-          <>
-            <Typography
-              component="h2"
-              variant="h4"
-              fontWeight="bold"
-              align="center"
-            >
-              Mais ações apoiadas pela empresa
-            </Typography>
-
-            <ClientEventFilter
-              url={`${client.des_identificador}`}
-              clientId={client.id}
-            />
-          </>
-        )}
       </Box>
     </div>
   );

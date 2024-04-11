@@ -7,6 +7,8 @@ import styled from "styled-components";
 import { IoCheckmarkOutline, IoCloseOutline } from "react-icons/io5";
 import { Button, GrayTitle } from "@/components/ui";
 import CustomDataGrid from "../../../ui/DataGrid";
+import { I18nTexts } from "@/types";
+import { useI18n } from "@/hooks/useI18n";
 
 const CellCustomized = styled.div`
   max-width: 300px;
@@ -16,11 +18,13 @@ const CellCustomized = styled.div`
   color: ${(props) => props.theme.palette.grey[700]};
 `;
 
-const PlansSection = () => {
+const PlansSection = ({ texts }: { texts: I18nTexts }) => {
+  const { t } = useI18n(texts);
+
   const columns: GridColDef[] = [
     {
       field: "beneficial",
-      headerName: "Benefícions",
+      headerName: t("lbl-51d60922"),
       flex: 1,
       minWidth: 300,
       renderCell: (param) => {
@@ -30,12 +34,16 @@ const PlansSection = () => {
           return <strong style={{ fontSize: "1rem" }}>Valor</strong>;
         }
 
-        return <CellCustomized>{param.row.beneficial}</CellCustomized>;
+        return (
+          <CellCustomized
+            dangerouslySetInnerHTML={{ __html: param.row.beneficial }}
+          />
+        );
       },
     },
     {
       field: "semente",
-      headerName: "Semente",
+      headerName: t("lbl-766cd610"),
       headerAlign: "center",
       flex: 1,
       minWidth: 150,
@@ -59,7 +67,7 @@ const PlansSection = () => {
               style={{ display: "block", width: "100%" }}
             >
               <Button variant="contained" fullWidth>
-                Escolher este
+                {t("btn-1cebb152")}
               </Button>
             </a>
           );
@@ -78,7 +86,7 @@ const PlansSection = () => {
     },
     {
       field: "germinacao",
-      headerName: "Germinação",
+      headerName: t("lbl-e6f8879f"),
       headerAlign: "center",
       flex: 1,
       minWidth: 150,
@@ -102,7 +110,7 @@ const PlansSection = () => {
               style={{ display: "block", width: "100%" }}
             >
               <Button variant="contained" fullWidth>
-                Escolher este
+                {t("btn-428cba2c")}
               </Button>
             </a>
           );
@@ -120,7 +128,7 @@ const PlansSection = () => {
     {
       field: "crescimento",
       headerAlign: "center",
-      headerName: "Crescimento",
+      headerName: t("lbl-7bebc672"),
       flex: 1,
       align: "center",
       minWidth: 150,
@@ -143,7 +151,7 @@ const PlansSection = () => {
               style={{ display: "block", width: "100%" }}
             >
               <Button variant="contained" fullWidth>
-                Escolher este
+                {t("btn-7ae3d377")}
               </Button>
             </a>
           );
@@ -160,7 +168,7 @@ const PlansSection = () => {
     },
     {
       field: "polinizacao",
-      headerName: "Polinização",
+      headerName: t("lbl-fcdcbdff"),
       headerAlign: "center",
       flex: 1,
       minWidth: 150,
@@ -194,7 +202,7 @@ const PlansSection = () => {
               style={{ display: "block", width: "100%" }}
             >
               <Button variant="contained" fullWidth>
-                Escolher este
+                {t("btn-869e3822")}
               </Button>
             </a>
           );
@@ -213,7 +221,7 @@ const PlansSection = () => {
   const data: any[] = [
     {
       id: 1,
-      beneficial: "Usuário(s)",
+      beneficial: t("txt-42830446"),
       semente: "1",
       germinacao: "2",
       crescimento: "5",
@@ -221,7 +229,7 @@ const PlansSection = () => {
     },
     {
       id: 2,
-      beneficial: "Dashboards de Gerenciamento",
+      beneficial: t("txt-63f9fa47"),
       semente: true,
       germinacao: true,
       crescimento: true,
@@ -229,7 +237,7 @@ const PlansSection = () => {
     },
     {
       id: 3,
-      beneficial: "Transferência de Créditos",
+      beneficial: t("txt-ef90bb36"),
       semente: true,
       germinacao: true,
       crescimento: true,
@@ -237,7 +245,7 @@ const PlansSection = () => {
     },
     {
       id: 4,
-      beneficial: "Aposentadoria de Créditos",
+      beneficial: t("txt-468165c5"),
       semente: true,
       germinacao: true,
       crescimento: true,
@@ -245,7 +253,7 @@ const PlansSection = () => {
     },
     {
       id: 5,
-      beneficial: "Comprar Créditos Internamente",
+      beneficial: t("txt-2699bf47"),
       semente: true,
       germinacao: true,
       crescimento: true,
@@ -253,7 +261,7 @@ const PlansSection = () => {
     },
     {
       id: 6,
-      beneficial: "Vender Créditos Internamente",
+      beneficial: t("txt-2202e764"),
       semente: true,
       germinacao: true,
       crescimento: true,
@@ -261,7 +269,7 @@ const PlansSection = () => {
     },
     {
       id: 7,
-      beneficial: "Upload de Créditos Padrão CFS (Carbon Fair Standard)",
+      beneficial: t("txt-c325d140"),
       semente: false,
       germinacao: true,
       crescimento: true,
@@ -269,7 +277,7 @@ const PlansSection = () => {
     },
     {
       id: 8,
-      beneficial: "Upload de Créditos Padrão VCS/CDM/ONU",
+      beneficial: t("txt-d866e463"),
       semente: false,
       germinacao: true,
       crescimento: true,
@@ -277,7 +285,7 @@ const PlansSection = () => {
     },
     {
       id: 9,
-      beneficial: "Anúncio dos Créditos na Calculadora",
+      beneficial: t("txt-0a87b73b"),
       semente: false,
       germinacao: true,
       crescimento: true,
@@ -285,7 +293,7 @@ const PlansSection = () => {
     },
     {
       id: 10,
-      beneficial: "Anúncio dos Créditos no Marketplace Externo",
+      beneficial: t("txt-066a2784"),
       semente: false,
       germinacao: true,
       crescimento: true,
@@ -293,7 +301,7 @@ const PlansSection = () => {
     },
     {
       id: 11,
-      beneficial: "Anúncio dos Créditos no Frete Neutro",
+      beneficial: t("txt-9a2b827b"),
       semente: false,
       germinacao: false,
       crescimento: true,
@@ -301,7 +309,7 @@ const PlansSection = () => {
     },
     {
       id: 12,
-      beneficial: "Anúncio dos Créditos no Passagem Neutra",
+      beneficial: t("txt-ef86afb3"),
       semente: false,
       germinacao: false,
       crescimento: true,
@@ -309,7 +317,7 @@ const PlansSection = () => {
     },
     {
       id: 13,
-      beneficial: "Trader de Crédito de Carbono",
+      beneficial: t("txt-94eb5a20"),
       semente: false,
       germinacao: false,
       crescimento: true,
@@ -317,7 +325,7 @@ const PlansSection = () => {
     },
     {
       id: 14,
-      beneficial: "Histórico de Emissões/Compensações de CO2",
+      beneficial: t("txt-185777d0"),
       semente: false,
       germinacao: false,
       crescimento: true,
@@ -325,7 +333,7 @@ const PlansSection = () => {
     },
     {
       id: 15,
-      beneficial: "Ferramenta de Cálculo de Emissoes Corporativas",
+      beneficial: t("txt-c815a57a"),
       semente: false,
       germinacao: false,
       crescimento: true,
@@ -333,7 +341,7 @@ const PlansSection = () => {
     },
     {
       id: 18,
-      beneficial: "Cadastro de Filiais",
+      beneficial: t("txt-a6515ad9"),
       semente: false,
       germinacao: false,
       crescimento: false,
@@ -341,8 +349,7 @@ const PlansSection = () => {
     },
     {
       id: 19,
-      beneficial:
-        "Desenvolvimento de Projetos na Cadeia Produtiva e Projetos Apoiados",
+      beneficial: t("txt-59492ea3"),
       semente: false,
       germinacao: false,
       crescimento: false,
@@ -375,11 +382,7 @@ const PlansSection = () => {
         })}
         component="header"
       >
-        <GrayTitle>
-          Oferecemos planos especiais para empresas que desejam promover ações
-          sustentáveis em sua organização e contribuir para a preservação do
-          planeta.
-        </GrayTitle>
+        <GrayTitle>{t("lbl-cf32f009")}</GrayTitle>
       </Box>
 
       <CustomDataGrid

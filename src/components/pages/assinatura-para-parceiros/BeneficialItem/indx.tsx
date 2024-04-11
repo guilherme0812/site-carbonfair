@@ -18,15 +18,15 @@ interface BeneficialItemType {
 const BeneficialItem = ({ title, description }: BeneficialItemType) => {
   return (
     <Container>
-      <Typography component="h3" variant="h6" fontWeight="bold">
-        {title}
-      </Typography>
+      <h3
+        className="font-bold text-2xl mb-1"
+        dangerouslySetInnerHTML={{ __html: title as string }}
+      />
 
-      {typeof description == "string" ? (
-        <Typography sx={{ whiteSpace: "pre-line" }}>{description}</Typography>
-      ) : (
-        description
-      )}
+      <p
+        className="text-base"
+        dangerouslySetInnerHTML={{ __html: description as string }}
+      />
     </Container>
   );
 };

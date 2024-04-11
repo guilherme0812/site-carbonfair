@@ -35,7 +35,7 @@ function PageContent({
       ) : id == "cadastrar-projeto" ? (
         <ProjectRegisterPage texts={texts} lang={lang} />
       ) : id == "assinatura-para-parceiros" ? (
-        <SubscriptionForPartnersPage />
+        <SubscriptionForPartnersPage texts={texts} lang={lang} />
       ) : id == "contato" ? (
         <ContactPage texts={texts} lang={lang} />
       ) : id == "ferramentas" ? (
