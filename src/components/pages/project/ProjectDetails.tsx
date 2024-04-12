@@ -29,7 +29,7 @@ const Container = styled.section`
 const ProjectDetails = (project: ICBProject) => {
   return (
     <Container>
-      <div className="container">
+      <div className="">
         <div className="selos">
           <Grid container spacing={8} justifyContent="center">
             {project?.ods?.map((ods, index) => (
@@ -49,7 +49,7 @@ const ProjectDetails = (project: ICBProject) => {
           {project.des_projeto}
         </Typography>
 
-        <p className="whitespace-pre-line text-gray-600 text-base">
+        <p className="whitespace-pre-line text-gray-600 text-base mb-16">
           {project.txt_descricao_detalhada}
         </p>
       </div>

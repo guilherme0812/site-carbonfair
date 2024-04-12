@@ -18,17 +18,15 @@ const ProjectData = ({
   const { t } = useI18n(texts);
 
   return (
-    <DataSection className="container">
-      <Grid container spacing={2} justifyContent="center">
+    <div id="indicadores">
+      <Grid container spacing={2} justifyContent="center" className="mb-32">
         <Grid item xs={12}>
-          <Typography {...(titleProps as any)} sx={{ mb: 2 }}>
-            {t("lbl-9888ef40")}
-          </Typography>
+          <h2 className="mb-2 font-bold text-xl">{t("lbl-9888ef40")}</h2>
         </Grid>
 
         {project?.num_kg_co2 && (
           <Grid item xs={12} md={4}>
-            <div className="value">
+            <div className="font-bold text-lg text-green-800">
               {new Intl.NumberFormat("pt-BR").format(
                 Number(project.num_kg_co2)
               )}
@@ -42,7 +40,7 @@ const ProjectData = ({
 
         {project?.num_arvores_plantadas && (
           <Grid item xs={12} md={4}>
-            <div className="value">
+            <div className="font-bold text-lg text-green-800">
               {new Intl.NumberFormat("pt-BR").format(
                 Number(project.num_arvores_plantadas)
               )}
@@ -56,7 +54,7 @@ const ProjectData = ({
 
         {project?.num_pessoas_beneficiadas && (
           <Grid item xs={12} md={4}>
-            <div className="value">
+            <div className="font-bold text-lg text-green-800">
               {new Intl.NumberFormat("pt-BR").format(
                 Number(project.num_pessoas_beneficiadas)
               )}
@@ -68,7 +66,7 @@ const ProjectData = ({
           </Grid>
         )}
       </Grid>
-    </DataSection>
+    </div>
   );
 };
 

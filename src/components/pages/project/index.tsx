@@ -1,7 +1,7 @@
 // import { Gallery } from "@/components/patterns";
 import { ICBProject } from "@/hooks/useApiProjects";
 import { LangType } from "@/services/getPages";
-import { Box, Grid, Typography, useTheme } from "@mui/material";
+import { Box, Divider, Grid, Typography, useTheme } from "@mui/material";
 import dynamic from "next/dynamic";
 import { IMarker } from "../../../components/ui/Map";
 import { GalleryImage } from "@/components/patterns/Gallery";
@@ -11,17 +11,19 @@ import { useI18n } from "@/hooks/useI18n";
 import ProjectData from "./ProjectData";
 import ProjectDetails from "./ProjectDetails";
 import ProjectDocuments from "./ProjectDocuments";
-import { Gallery } from "carbonfair-ui";
 import GallerySection from "./GallerySection";
+import GalleryCarbonFair from "@/components/patterns/GalleryCarbonFair";
+import { SecondaryTabsCarbonFair } from "@/components/patterns";
+import TabsChoose from "./TabsChoose";
 
 const labelStyle = {
-  align: "center",
+  variant: "caption",
 };
 
 const titleStyle = {
-  align: "center",
+  // align: "center",
   fontWeight: "bold",
-  variant: "subtitle1",
+  variant: "subtitle2",
 };
 
 const Map = dynamic(() => import("../../../components/ui/Map"), {
@@ -81,107 +83,160 @@ const ProjectPage = async ({
 
   return (
     <div>
-      <Header {...project} />
-      <div className="container">
-        <Grid container>
-          <Grid container spacing={2}>
-            <Grid item xs={12} md={2}>
-              <Typography className="text-green-800" {...(titleStyle as any)}>
-                {t("lbl-1ade420b")}
-              </Typography>
-              <Typography {...(labelStyle as any)}>
-                {project?.des_status_projeto}
-              </Typography>
-            </Grid>
-            <Grid item xs={12} md={2}>
-              <Typography className="text-green-800" {...(titleStyle as any)}>
-                {t("lbl-5c0b678a")}
-              </Typography>
-              <Typography {...(labelStyle as any)}>
-                {project?.des_tipo_projeto}
-              </Typography>
-            </Grid>
-            <Grid item xs={12} md={2}>
-              <Typography className="text-green-800" {...(titleStyle as any)}>
-                {t("lbl-5e07586f")}
-              </Typography>
-              <Typography {...(labelStyle as any)}>
-                {project?.des_bioma}
-              </Typography>
-            </Grid>
-            <Grid item xs={12} md={2}>
-              <Typography className="text-green-800" {...(titleStyle as any)}>
-                {t("lbl-4d3c2b81")}
-              </Typography>
-              <Typography {...(labelStyle as any)}>
-                {project?.des_cidade}
-              </Typography>
-            </Grid>
-            <Grid item xs={12} md={2}>
-              <Typography className="text-green-800" {...(titleStyle as any)}>
-                {t("lbl-ba9a21c8")}
-              </Typography>
-              <Typography {...(labelStyle as any)}>
-                {project?.des_padrao}
-              </Typography>
-            </Grid>
-            <Grid item xs={12} md={2}>
-              <h3
-                className="text-base text-center whitespace-pre-line font-bold text-green-800"
-                dangerouslySetInnerHTML={{ __html: t("lbl-e1c99165") }}
-              />
-              <Typography {...(labelStyle as any)}>
-                {new Intl.NumberFormat("pt-BR").format(
-                  project?.num_kg_co2 ? Number(project.num_kg_co2) : 0
-                )}{" "}
-              </Typography>
-            </Grid>
-          </Grid>
-        </Grid>
-      </div>
+      <div
+        className="max-w-screen-2xl m-auto mt-20 sm:px-4 lg:px-0 max-h-screen"
+        id="sumario"
+      >
+        <TabsChoose />
 
-      {imageList.length > 0 && (
-        <GallerySection options={imageList.map((list) => list.des_url)} />
-      )}
+        <div className="flex gap-8">
+          <div className="w-1/2 ">
+            <GalleryCarbonFair
+              options={[
+                "https://carbonfair-publico.s3.amazonaws.com/projetos/1/capa_400.jpg",
+                ...imageList.map((list) => list.des_url),
+              ]}
+              // imagesInLayout={7}
+            />
+          </div>
 
-      <div className="container">
-        <p className="text-base text-gray-600">
-          {project?.txt_descricao_simples}
-        </p>
-      </div>
+          <div className="w-1/2 max-h-[80vh] overflow-y-scroll overflow-x-hidden">
+            <h2 className="mb-2 font-bold text-xl">{project.des_projeto}</h2>
 
-      {marker && (
-        <Map markers={[marker]} zoom={5} x={marker.lonX} y={marker.latY} />
-      )}
+            <p className="text-base text-gray-600 mt-16 mb-8">
+              {project?.txt_descricao_simples}
+            </p>
 
-      <ProjectData project={project} texts={texts} />
+            <Grid container className="mb-8">
+              <Grid container spacing={2}>
+                <Grid item xs={12} md={2}>
+                  <Typography
+                    className="text-green-800"
+                    {...(titleStyle as any)}
+                  >
+                    {t("lbl-1ade420b")}
+                  </Typography>
+                  <Typography {...(labelStyle as any)}>
+                    {project?.des_status_projeto}
+                  </Typography>
+                </Grid>
+                <Grid item xs={12} md={2}>
+                  <Typography
+                    className="text-green-800"
+                    {...(titleStyle as any)}
+                  >
+                    {t("lbl-5c0b678a")}
+                  </Typography>
+                  <Typography {...(labelStyle as any)}>
+                    {project?.des_tipo_projeto}
+                  </Typography>
+                </Grid>
+                <Grid item xs={12} md={2}>
+                  <Typography
+                    className="text-green-800"
+                    {...(titleStyle as any)}
+                  >
+                    {t("lbl-5e07586f")}
+                  </Typography>
+                  <Typography {...(labelStyle as any)}>
+                    {project?.des_bioma}
+                  </Typography>
+                </Grid>
+                <Grid item xs={12} md={2}>
+                  <Typography
+                    className="text-green-800"
+                    {...(titleStyle as any)}
+                  >
+                    {t("lbl-4d3c2b81")}
+                  </Typography>
+                  <Typography {...(labelStyle as any)}>
+                    {project?.des_cidade}
+                  </Typography>
+                </Grid>
+                <Grid item xs={12} md={2}>
+                  <Typography
+                    className="text-green-800"
+                    {...(titleStyle as any)}
+                  >
+                    {t("lbl-ba9a21c8")}
+                  </Typography>
+                  <Typography {...(labelStyle as any)}>
+                    {project?.des_padrao}
+                  </Typography>
+                </Grid>
+                <Grid item xs={12} md={2}>
+                  <h3
+                    className="text-sm whitespace-pre-line font-bold text-green-800"
+                    dangerouslySetInnerHTML={{ __html: t("lbl-e1c99165") }}
+                  />
+                  <Typography {...(labelStyle as any)}>
+                    {new Intl.NumberFormat("pt-BR").format(
+                      project?.num_kg_co2 ? Number(project.num_kg_co2) : 0
+                    )}{" "}
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
 
-      {project?.des_youtube_id && (
-        <div className="">
-          <Box
-            sx={{
-              p: 4,
-              display: "flex",
-              justifyContent: "center",
-              bgcolor: "grey.A200",
-            }}
-          >
-            <iframe
-              width="560"
-              height="315"
-              src={`https://www.youtube.com/embed/${project?.des_youtube_id}`}
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </Box>
+            {project?.des_youtube_id && (
+              <div className="mb-16">
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                >
+                  <iframe
+                    width="560"
+                    height="315"
+                    src={`https://www.youtube.com/embed/${project?.des_youtube_id}`}
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </Box>
+              </div>
+            )}
+
+            <Divider sx={{ mb: "1rem" }} />
+
+            {/* {imageList.length > 0 && (
+              <GallerySection options={imageList.map((list) => list.des_url)} />
+            )} */}
+
+            <ProjectData project={project} texts={texts} />
+
+            <Divider sx={{ mb: "1rem" }} />
+
+            <h2 className="mb-2 font-bold text-xl" id="detalhes">
+              Detalhes
+            </h2>
+
+            <ProjectDetails {...project} />
+
+            <ProjectDocuments {...project} />
+
+            <Divider sx={{ mb: "1rem" }} />
+
+            {marker && (
+              <div>
+                <h2 className="mb-2 font-bold text-xl" id="localizacao">
+                  Localização
+                </h2>
+                <Map
+                  markers={[marker]}
+                  zoom={5}
+                  x={marker.lonX}
+                  y={marker.latY}
+                />
+              </div>
+            )}
+          </div>
         </div>
-      )}
+      </div>
 
-      <ProjectDetails {...project} />
-
-      <ProjectDocuments {...project} />
+      {/* <Header {...project} /> */}
     </div>
   );
 };

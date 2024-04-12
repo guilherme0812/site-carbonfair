@@ -12,6 +12,7 @@ import Gallery from "./Gallery";
 import GoogleAnalytics from "./GoogleAnalytics";
 import FloatingIcons from "./FloatingIcons";
 import Header from "./Header";
+import SecondaryTabsCarbonFair from "./SecondaryTabsCarbonFair";
 
 export {
   Cart,
@@ -28,4 +29,5 @@ export {
   GoogleAnalytics,
   FloatingIcons,
   Header,
+  SecondaryTabsCarbonFair,
 };
