@@ -38,7 +38,6 @@ const NeutralizeEmissionPage = ({
               >
                 {t("lbl-ca47306a")}
               </Typography>
-
               <p
                 className="whitespace-pre-line text-center text-gray-600"
                 dangerouslySetInnerHTML={{ __html: t("txt-888195b9") }}
